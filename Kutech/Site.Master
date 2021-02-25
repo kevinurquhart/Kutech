@@ -1,0 +1,397 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Kutech.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en_gb">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> | Kutech</title>
+
+    <%--<webopt:bundlereference runat="server" path="~/Content/css" />--%>
+    <link rel="apple-touch-icon" sizes="180x180" href="~/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/assets/images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="~/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileImage" content="~/assets/images/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Default stylesheets-->
+    <link href="~/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="~/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <%--<link href="~/assets/lib/iconsmind/iconsmind.css" rel="stylesheet">--%>
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="~/assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
+    <link href="~/assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <%--<link href="~/assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">--%>
+    <%--<link href="~/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">--%>
+    <link href="~/assets/lib/remodal/dist/remodal.css" rel="stylesheet">
+    <link href="~/assets/lib/remodal/dist/remodal-default-theme.css" rel="stylesheet">
+    <link href="~/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="~/assets/lib/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+    <link href="~/assets/css/style.css" rel="stylesheet">
+    <link href="~/assets/css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager" runat="server">
+            <Scripts>
+                <%--<asp:ScriptReference Path="~/assets/lib/bootstrap/dist/js/bootstrap.min.js" />
+                <asp:ScriptReference Path="~/assets/lib/jquery/dist/jquery.min.js" />
+                <asp:ScriptReference Path="~/assets/lib/imagesloaded/imagesloaded.pkgd.min.js" />
+                <asp:ScriptReference Path="~/assets/lib/gsap/src/minified/TweenMax.min.js" />
+                <asp:ScriptReference Path="~/assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js" />
+                <asp:ScriptReference Path="~/assets/lib/CustomEase.min.js" />
+                <asp:ScriptReference Path="~/assets/js/config.js" />
+                <asp:ScriptReference Path="~/assets/js/zanimation.js" />
+                <asp:ScriptReference Path="~/assets/js/inertia.js" />
+                <asp:ScriptReference Path="~/assets/lib/owl.carousel/dist/owl.carousel.min.js" />
+                <asp:ScriptReference Path="~/assets/lib/remodal/dist/remodal.js" />
+                <asp:ScriptReference Path="~/assets/lib/lightbox2/dist/js/lightbox.js" />
+                <asp:ScriptReference Path="~/assets/lib/flexslider/jquery.flexslider-min.js" />
+                <asp:ScriptReference Path="~/assets/js/core.js" />
+                <asp:ScriptReference Path="~/assets/js/main.js" />--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <main>
+            <div class="loading" id="preloader">
+                <div class="loader h-100 d-flex align-items-center justify-content-center">
+                    <div class="line-scale">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <section class="background-primary py-3 d-sm-block">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-8 d-none d-lg-block">
+                            <a runat="server" href="~/">
+                                <asp:Image ID="mainHeaderLogo" runat="server" ImageUrl="~/assets/images/main/mainHomeLogo.png" />
+                            </a>
+                        </div>
+                        <div class="col-1 ml-md-auto order-md-2 d-none d-sm-block color-white">
+                            <a runat="server" href="~/ShoppingCart.aspx">
+								<span class="fa fa-shopping-cart fw-800 icon-position-fix color-white"></span>
+								<span id="checkout_items" runat="server" class="checkout_items color-white">0</span>
+							</a>
+                        </div>
+                        <div class="col-3">
+                            <asp:LoginView runat="server" ViewStateMode="Disabled">
+                                <AnonymousTemplate>
+                                    <div class="row">
+                                            <div class="col-12 text-right">
+                                                <a class="color-white" runat="server" href="~/Account/Login">Log in</a></li>
+                                            </div>
+                                        </div>
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    <div class="container fs--1">
+                                        <div class="row">
+                                            <div class="col-7 text-right">
+                                                <a class="color-white" runat="server" href="~/Account/Manage" title="Manage your account">Your Account</a>
+                                            </div>
+                                            <div class="col-5">
+                                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" CssClass="color-white" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+            <div class="znav-white znav-container sticky-top navbar-elixir"" id="znav-container">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand overflow-hidden pr-3" style="height:50px; margin-top:-5px;" href="home.aspx">
+                        <img src="../assets/images/main/logo-top.png" alt="" aria-label="SQLTraining Logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger hamburger--emphatic">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown" runat="server">
+                        <ul class="navbar-nav fs-0 fw-700">
+							<li>
+								<a runat="server" href="~/">Home</a>
+							</li>
+							<li>
+								<a href="JavaScript:void(0)">About</a>
+								<ul class="dropdown fs--1">
+									<li>
+										<a href="#">Our Company</a>
+									</li>
+									<li>
+										<a href="#">Our Clients</a>
+									</li>
+									<li>
+										<a href="#">Our Staff</a>
+									</li>
+									<li>
+										<a href="#">Our Blogs</a>
+									</li>
+								</ul>
+							</li>
+                            <li>
+								<a href="JavaScript:void(0)">Training</a>
+								<ul class="dropdown fs--1">
+									<li>
+										<a href="#">Courses</a>
+									</li>
+									<li>
+										<a href="#">Course Dates</a>
+									</li>
+									<%--<li>
+										<a href="#">Locations</a>
+									</li>--%>
+									<li>
+										<a href="#">FAQs</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Consultancy</a>
+							</li>
+							<li>
+								<a href="JavaScript:void(0)">Support</a>
+								<ul class="dropdown fs--1">
+									<li>
+										<a href="#">Remote DBA</a>
+									</li>
+									<li>
+										<a href="#">Health Checks</a>
+									</li>
+									<li>
+										<a href="#">Monitoring</a>
+									</li>
+								</ul>
+							</li>
+                            <li>
+								<a href="JavaScript:void(0)">Interviews</a>
+								<ul class="dropdown fs--1">
+									<li>
+										<a href="#">Automated</a>
+									</li>
+									<li>
+										<a href="#">In-Person</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="JavaScript:void(0)">Blogs</a>
+								<ul class="dropdown fs--1">
+									<li>
+										<a href="#">SQL Server</a>
+									</li>
+									<li>
+										<a href="#">PowerShell</a>
+									</li>
+									<%--<li>
+										<a href="#">C#</a>
+									</li>
+                                    <li>
+										<a href="#">Power BI</a>
+									</li>--%>
+									<li>
+										<a href="#">Docker</a>
+									</li>
+								</ul>
+							</li>
+                            <li>
+								<a class="d-block mr-md-9" href="#">Portal</a>
+							</li>
+                        </ul>
+						<ul class="navbar-nav ml-lg-auto">
+							<li>
+								<a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" href="../contact.aspx">Contact</a>
+							</li>
+						</ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <section style="background-color: #3387b3;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="background-primary color-white p-5 p-lg-6 radius-secondary">
+                            <h4 class="color-white fs-1 fs-lg-2 mb-1">Sign up for email alerts</h4>
+                            <p class="color-white">Stay current with our latest insights</p>
+                            <div class="mt-4">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7 pr-md-0">
+                                        <div class="input-group">
+                                            <input id="newsletter" runat="server" class="form-control" type="email" placeholder="Enter Email Here" aria-label="Enter Email Here" />
+                                            <input runat="server" type="text" id="newsletterName" name="name" placeholder="Full Name" class="subject" aria-label="Full Name" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 mt-3 mt-md-0">
+                                        <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                                            <ContentTemplate>
+                                                <%--<asp:Button ID="newsletterButton" CssClass="btn btn-warning btn-block" runat="server" Text="Submit" OnClick="newsletterButton_Click"/>--%>
+                                                <asp:Button ID="newsletterButton" CssClass="btn btn-warning btn-block" runat="server" Text="Submit"/>
+                                            </ContentTemplate>
+                                        </asp:UpdatePanel>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="row">
+                            <div class="col-6 col-lg-4 color-white ml-lg-auto">
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <a class="color-white" target="_blank" href="https://www.SQLWorld.co.uk/contact.aspx">Contact Us</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class="color-white" href="../faq.aspx">FAQ</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class="color-white" target="_blank" href="https://www.SQLWorld.co.uk/privacy.aspx">Privacy Policy</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class="color-white" target="_blank" href="https://www.SQLWorld.co.uk/terms.aspx">Terms of Use</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a class="color-white" target="_blank" href="https://www.SQLWorld.co.uk/contact.aspx">Our Office</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-5 ml-sm-auto">
+                                <a id="linkLinkedIn" runat="server" href="https://www.linkedin.com/company/sql-training-ltd" target="_blank" rel="noreferrer">
+                                    <div class="row mb-3 align-items-center no-gutters">
+                                        <div class="col-auto">
+                                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                                <span class="w-100 fa fa-linkedin color-white"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pl-3">
+                                            <h5 class="fs-0 color-white mb-0 d-inline-block">Linkedin</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a id="linkTwitter" runat="server" href="https://twitter.com/SQLSolvedUK" target="_blank" rel="noreferrer">
+                                    <div class="row mb-3 align-items-center no-gutters">
+                                        <div class="col-auto">
+                                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                                <span class="w-100 fa fa-twitter color-white"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pl-3">
+                                            <h5 class="fs-0 color-white mb-0 d-inline-block">Twitter</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a id="linkFacebook" runat="server" href="https://www.facebook.com/SQLSolvedUK" target="_blank" rel="noreferrer">
+                                    <div class="row mb-3 align-items-center no-gutters">
+                                        <div class="col-auto">
+                                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                                <span class="w-100 fa fa-facebook color-white"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pl-3">
+                                            <h5 class="fs-0 color-white mb-0 d-inline-block">Facebook</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+        </section>
+        <section class="background-primary text-center py-4">
+            <div class="container">
+                <div class="row align-items-center" style="opacity: 0.85;">
+                    <div class="col-sm-12 mt-3 mt-sm-0">
+                        <p class="color-white lh-6 mb-0 fw-600">&copy; Copyright 2021 Kutech Solutions Ltd.</p>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+        </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="../assets/lib/jquery/dist/jquery.min.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+        <% } %>
+        <script src="../assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/jquery/dist/bootstrap.min.js"></script>
+        <% } %>
+        <script src="../assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <% } %>
+        <script src="../assets/lib/gsap/src/minified/TweenMax.min.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/gsap/src/minified/TweenMax.min.js"></script>
+        <% } %>
+        <script src="../assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+        <% } %>
+        <script src="../assets/lib/CustomEase.min.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/CustomEase.min.js"></script>
+        <% } %>
+        <script src="../assets/js/config.js"></script>
+        <% if (false) {%>
+            <script src="assets/js/config.js"></script>
+        <% } %>
+        <script src="../assets/js/zanimation.js"></script>
+        <% if (false) {%>
+            <script src="assets/js/zanimation.js"></script>
+        <% } %>
+        <script src="../assets/js/inertia.js"></script>
+        <% if (false) {%>
+            <script src="assets/js/inertia.js"></script>
+        <% } %>
+        <script src="../assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+        <% } %>
+        <script src="../assets/lib/remodal/dist/remodal.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/remodal/dist/remodal.js"></script>
+        <% } %>
+        <script src="../assets/lib/lightbox2/dist/js/lightbox.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/lightbox2/dist/js/lightbox.js"></script>
+        <% } %>
+        <script src="../assets/lib/flexslider/jquery.flexslider-min.js"></script>
+        <% if (false) {%>
+            <script src="assets/lib/flexslider/jquery.flexslider-min.js"></script>
+        <% } %>
+        <script src="../assets/js/core.js"></script>
+        <% if (false) {%>
+            <script src="assets/js/core.js"></script>
+        <% } %>
+        <script src="../assets/js/main.js"></script>
+        <% if (false) {%>
+            <script src="assets/js/main.js"></script>
+        <% } %>
+    </form>
+</body>
+</html>

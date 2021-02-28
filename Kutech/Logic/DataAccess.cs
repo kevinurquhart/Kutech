@@ -9,44 +9,44 @@ namespace Kutech.Logic
 {
     public class DataAccess
     {
-        public SqlDataReader getProducts()
+        public List<Product> getOnlineProductList(DataSet Products)
         {
-            SQLClass mySQL = new SQLClass();
+            List<Product> courseList = new List<Product>();
 
-            return mySQL.fetchReader("exec web.productFetch");
-        }
-
-        //public SqlDataReader getCourses()
-        //{
-        //    SQLClass mySQL = new SQLClass();
-
-        //    return mySQL.fetchReader("select * from KutechWeb.dbo.courseTable;");
-        //}
-
-        public DataSet getCourses()
-        {
-            SQLClass mySQL = new SQLClass();
-
-            return mySQL.fetchDataSet("select * from KutechWeb.dbo.courseTable;");
-        }
-
-        public List<CourseTable> getCourseList()
-        {
-            DataSet myDataSet = getCourses();
-            List<CourseTable> courseList = new List<CourseTable>();
-
-            courseList = (from DataRow dr in myDataSet.Tables[0].Rows
-                            select new CourseTable()
+            courseList = (from DataRow dr in Products.Tables[0].Rows
+                            select new Product()
                             {
-                                CourseID = Convert.ToInt32(dr["CourseID"]),
-                                CourseLevel = Convert.ToString(dr["CourseLevel"]),
-                                CourseName = Convert.ToString(dr["CourseName"]),
-                                CourseInfo = Convert.ToString(dr["CourseInfo"]),
-                                CourseDurationHours = Convert.ToString(dr["CourseDurationHours"]),
-                                CoursePrice = Convert.ToDouble(dr["CoursePrice"])
+                                ProductID = Convert.ToInt32(dr["ProductID"]),
+                                ProductLevel = Convert.ToString(dr["ProductLevel"]),
+                                ProductName = Convert.ToString(dr["ProductName"]),
+                                ProductDuration = Convert.ToString(dr["ProductDuration"]),
+                                ProductPrice = Convert.ToDouble(dr["ProductPrice"]),
+                                ProductType = Convert.ToString(dr["ProductType"]),
+                                ProductDelivery = Convert.ToString(dr["ProductDelivery"])
                             }).ToList();
 
             return courseList;
+        }
+
+        public List<Product> getOnlineCourses()
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return getOnlineProductList(mySQL.fetchDataSet("select * from web.Product where productType = 'Course' and productDelivery = 'Online';"));
+        }
+
+        public List<Product> getHealthChecks()
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return getOnlineProductList(mySQL.fetchDataSet("select * from web.Product where productType = 'Health Check' and productDelivery = 'Remote';"));
+        }
+
+        public List<Product> getConsultancy()
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return getOnlineProductList(mySQL.fetchDataSet("select * from web.Product where productType = 'Consultancy' and productDelivery = 'Remote';"));
         }
     }
 }

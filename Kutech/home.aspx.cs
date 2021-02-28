@@ -13,13 +13,22 @@ namespace Kutech
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //gridCourse1D.DataSource = myDAL.courseTables().Tables[0];
-            //gridCourse1D.DataBind();
+            
         }
 
-        public List<CourseTable> GetCourses()
+        public List<Product> GetOnlineCourses()
         {
-            return myDAL.getCourseList();
+            return myDAL.getOnlineCourses();
+        }
+
+        public List<Product> GetHealthChecks()
+        {
+            return myDAL.getHealthChecks();
+        }
+
+        public List<Product> GetConsultancy()
+        {
+            return myDAL.getConsultancy();
         }
     }
 }

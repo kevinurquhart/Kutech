@@ -13,9 +13,9 @@ namespace Kutech
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string rawId = Request.QueryString["CourseID"];
-            int courseID;
-            if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out courseID))
+            string rawId = Request.QueryString["ProductID"];
+            int productID;
+            if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out productID))
             {
                 using (ShoppingCartActions usersShoppingCart = new ShoppingCartActions())
                 {
@@ -25,8 +25,8 @@ namespace Kutech
             }
             else
             {
-                Debug.Fail("ERROR : We should never get to AddToCart.aspx without a CourseID.");
-                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a CourseID.");
+                Debug.Fail("ERROR : We should never get to AddToCart.aspx without a ProductID.");
+                throw new Exception("ERROR : It is illegal to load AddToCart.aspx without setting a ProductID.");
             }
             Response.Redirect("ShoppingCart.aspx");
         }

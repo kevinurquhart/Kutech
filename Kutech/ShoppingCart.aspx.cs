@@ -23,7 +23,9 @@ namespace Kutech
                 if (cartTotal > 0)
                 {
                     // Display Total.
-                    lblTotal.Text = String.Format("{0:c}", cartTotal);
+                    lblNetTotal.Text = String.Format("{0:c}", cartTotal);
+                    lblVATTotal.Text = String.Format("{0:c}", (cartTotal/5));
+                    lblTotal.Text = String.Format("{0:c}", cartTotal*(decimal)1.2);
                 }
                 else
                 {
@@ -36,6 +38,10 @@ namespace Kutech
         {
             LabelTotalText.Text = "";
             lblTotal.Text = "";
+            lblVATText.Text = "";
+            lblVATTotal.Text = "";
+            lblNetText.Text = "";
+            lblNetTotal.Text = "";
             ShoppingCartTitle.InnerText = "Shopping Cart is Empty";
             UpdateBtn.Visible = false;
             CheckoutBtn.Visible = false;
@@ -58,7 +64,7 @@ namespace Kutech
                 {
                     IOrderedDictionary rowValues = new OrderedDictionary();
                     rowValues = GetValues(CartList.Rows[i]);
-                    cartUpdates[i].CourseID = Convert.ToInt32(rowValues["CourseID"]);
+                    cartUpdates[i].ProductID = Convert.ToInt32(rowValues["ProductID"]);
 
                     CheckBox cbRemove = new CheckBox();
                     cbRemove = (CheckBox)CartList.Rows[i].FindControl("Remove");
@@ -70,7 +76,10 @@ namespace Kutech
                 }
                 usersShoppingCart.UpdateShoppingCartDatabase(cartId, cartUpdates);
                 CartList.DataBind();
-                lblTotal.Text = String.Format("{0:c}", usersShoppingCart.GetTotal());
+                //lblTotal.Text = String.Format("{0:c}", usersShoppingCart.GetTotal());
+                lblNetTotal.Text = String.Format("{0:c}", usersShoppingCart.GetTotal());
+                lblVATTotal.Text = String.Format("{0:c}", (usersShoppingCart.GetTotal() / 5));
+                lblTotal.Text = String.Format("{0:c}", usersShoppingCart.GetTotal() * (decimal)1.2);
                 if (usersShoppingCart.GetCount() == 0)
                     noItems();
 

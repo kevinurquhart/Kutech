@@ -10,7 +10,7 @@ namespace Kutech.Models
 
         public string Username { get; set; }
 
-        public int CourseID { get; set; }
+        public int ProductID { get; set; }
 
         public int Quantity { get; set; }
 

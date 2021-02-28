@@ -33,6 +33,42 @@ namespace Kutech
         protected global::System.Web.UI.WebControls.GridView CartList;
 
         /// <summary>
+        /// lblNetText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNetText;
+
+        /// <summary>
+        /// lblNetTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNetTotal;
+
+        /// <summary>
+        /// lblVATText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblVATText;
+
+        /// <summary>
+        /// lblVATTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblVATTotal;
+
+        /// <summary>
         /// LabelTotalText control.
         /// </summary>
         /// <remarks>

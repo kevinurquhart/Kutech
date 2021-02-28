@@ -21,17 +21,17 @@ namespace Kutech.Logic
 
             var cartItem = _db.ShoppingCartItems.SingleOrDefault(
                 c => c.CartId == ShoppingCartId
-                && c.CourseID == id);
+                && c.ProductID == id);
             if (cartItem == null)
             {
                 // Create a new cart item if no cart item exists.                 
                 cartItem = new CartItem
                 {
                     ItemId = Guid.NewGuid().ToString(),
-                    CourseID = id,
+                    ProductID = id,
                     CartId = ShoppingCartId,
-                    Course = _db.Courses.SingleOrDefault(
-                   p => p.CourseID == id),
+                    Product = _db.Products.SingleOrDefault(
+                   p => p.ProductID == id),
                     Quantity = 1,
                     DateCreated = DateTime.Now
                 };
@@ -92,7 +92,7 @@ namespace Kutech.Logic
             total = (decimal?)(from cartItems in _db.ShoppingCartItems
                                where cartItems.CartId == ShoppingCartId
                                select (int?)cartItems.Quantity *
-                               cartItems.Course.CoursePrice).Sum();
+                               cartItems.Product.ProductPrice).Sum();
             return total ?? decimal.Zero;
         }
 
@@ -118,15 +118,15 @@ namespace Kutech.Logic
                         // Iterate through all rows within shopping cart list
                         for (int i = 0; i < CartItemCount; i++)
                         {
-                            if (cartItem.Course.CourseID == CartItemUpdates[i].CourseID)
+                            if (cartItem.Product.ProductID == CartItemUpdates[i].ProductID)
                             {
                                 if (CartItemUpdates[i].PurchaseQuantity < 1 || CartItemUpdates[i].RemoveItem == true)
                                 {
-                                    RemoveItem(cartId, cartItem.CourseID);
+                                    RemoveItem(cartId, cartItem.ProductID);
                                 }
                                 else
                                 {
-                                    UpdateItem(cartId, cartItem.CourseID, CartItemUpdates[i].PurchaseQuantity);
+                                    UpdateItem(cartId, cartItem.ProductID, CartItemUpdates[i].PurchaseQuantity);
                                 }
                             }
                         }
@@ -145,7 +145,7 @@ namespace Kutech.Logic
             {
                 try
                 {
-                    var myItem = (from c in _db.ShoppingCartItems where c.CartId == removeCartID && c.Course.CourseID == removeProductID select c).FirstOrDefault();
+                    var myItem = (from c in _db.ShoppingCartItems where c.CartId == removeCartID && c.Product.ProductID == removeProductID select c).FirstOrDefault();
                     if (myItem != null)
                     {
                         // Remove Item.
@@ -166,7 +166,7 @@ namespace Kutech.Logic
             {
                 try
                 {
-                    var myItem = (from c in _db.ShoppingCartItems where c.CartId == updateCartID && c.Course.CourseID == updateProductID select c).FirstOrDefault();
+                    var myItem = (from c in _db.ShoppingCartItems where c.CartId == updateCartID && c.Product.ProductID == updateProductID select c).FirstOrDefault();
                     if (myItem != null)
                     {
                         myItem.Quantity = quantity;
@@ -207,7 +207,7 @@ namespace Kutech.Logic
 
         public struct ShoppingCartUpdates
         {
-            public int CourseID;
+            public int ProductID;
             public int PurchaseQuantity;
             public bool RemoveItem;
         }

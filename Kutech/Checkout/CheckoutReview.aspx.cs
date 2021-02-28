@@ -21,13 +21,6 @@ namespace Kutech.Checkout
             var myOrder = new Order();
             myOrder.OrderDate = Convert.ToDateTime("2021-02-01");
             myOrder.Username = User.Identity.Name;
-            myOrder.FirstName = "FIRSTNAME";
-            myOrder.LastName = "LASTNAME";
-            myOrder.Address = "SHIPTOSTREET";
-            myOrder.City = "SHIPTOCITY";
-            myOrder.State = "SHIPTOSTATE";
-            myOrder.PostalCode = "SHIPTOZIP";
-            myOrder.Country = "SHIPTOCOUNTRYCODE";
             myOrder.Email = "kevin@kausolutions.co.uk";
 
             // Get DB context.
@@ -51,9 +44,9 @@ namespace Kutech.Checkout
                     var myOrderDetail = new OrderDetail();
                     myOrderDetail.OrderId = myOrder.OrderId;
                     myOrderDetail.Username = User.Identity.Name;
-                    myOrderDetail.CourseID = myOrderList[i].CourseID;
+                    myOrderDetail.ProductID = myOrderList[i].ProductID;
                     myOrderDetail.Quantity = myOrderList[i].Quantity;
-                    myOrderDetail.UnitPrice = myOrderList[i].Course.CoursePrice;
+                    myOrderDetail.UnitPrice = myOrderList[i].Product.ProductPrice;
 
                     // Add OrderDetail to DB.
                     _db.OrderDetails.Add(myOrderDetail);

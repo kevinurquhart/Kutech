@@ -13,8 +13,8 @@ namespace Kutech.Models
 
         public System.DateTime DateCreated { get; set; }
 
-        public int CourseID { get; set; }
+        public int ProductID { get; set; }
 
-        public virtual CourseTable Course { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

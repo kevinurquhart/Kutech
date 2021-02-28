@@ -39,21 +39,6 @@
     <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager" runat="server">
             <Scripts>
-                <%--<asp:ScriptReference Path="~/assets/lib/bootstrap/dist/js/bootstrap.min.js" />
-                <asp:ScriptReference Path="~/assets/lib/jquery/dist/jquery.min.js" />
-                <asp:ScriptReference Path="~/assets/lib/imagesloaded/imagesloaded.pkgd.min.js" />
-                <asp:ScriptReference Path="~/assets/lib/gsap/src/minified/TweenMax.min.js" />
-                <asp:ScriptReference Path="~/assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js" />
-                <asp:ScriptReference Path="~/assets/lib/CustomEase.min.js" />
-                <asp:ScriptReference Path="~/assets/js/config.js" />
-                <asp:ScriptReference Path="~/assets/js/zanimation.js" />
-                <asp:ScriptReference Path="~/assets/js/inertia.js" />
-                <asp:ScriptReference Path="~/assets/lib/owl.carousel/dist/owl.carousel.min.js" />
-                <asp:ScriptReference Path="~/assets/lib/remodal/dist/remodal.js" />
-                <asp:ScriptReference Path="~/assets/lib/lightbox2/dist/js/lightbox.js" />
-                <asp:ScriptReference Path="~/assets/lib/flexslider/jquery.flexslider-min.js" />
-                <asp:ScriptReference Path="~/assets/js/core.js" />
-                <asp:ScriptReference Path="~/assets/js/main.js" />--%>
             </Scripts>
         </asp:ScriptManager>
         <main>

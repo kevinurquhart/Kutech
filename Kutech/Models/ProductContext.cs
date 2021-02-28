@@ -8,18 +8,22 @@ namespace Kutech.Models
         {
             Database.SetInitializer<ProductContext>(null);
 
-            modelBuilder.Entity<CourseTable>()
-            .ToTable("CourseTable");
+            modelBuilder.Entity<Product>()
+            .ToTable("Product", "web");
+            modelBuilder.Entity<CartItem>()
+            .ToTable("CartItem", "web");
+            modelBuilder.Entity<Order>()
+            .ToTable("Orders", "web");
+            modelBuilder.Entity<OrderDetail>()
+            .ToTable("OrderDetails", "web");
         }
 
         public ProductContext() : base("Kutech")
         {
         }
-        public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<CartItem> ShoppingCartItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
-        public DbSet<CourseTable> Courses { get; set; }
     }
 }

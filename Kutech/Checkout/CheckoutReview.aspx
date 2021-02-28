@@ -5,9 +5,9 @@
     <h3 style="padding-left: 33px">Products:</h3>
     <asp:GridView ID="OrderItemList" runat="server" AutoGenerateColumns="False" GridLines="Both" CellPadding="10" Width="500" BorderColor="#efeeef" BorderWidth="33">              
         <Columns>
-            <asp:BoundField DataField="CourseID" HeaderText=" Product ID" />        
-            <asp:BoundField DataField="Course.CourseName" HeaderText=" Product Name" />        
-            <asp:BoundField DataField="Course.CoursePrice" HeaderText="Price (each)" DataFormatString="{0:c}"/>     
+            <asp:BoundField DataField="ProductID" HeaderText=" Product ID" />        
+            <asp:BoundField DataField="Product.ProductName" HeaderText=" Product Name" />        
+            <asp:BoundField DataField="Product.ProductPrice" HeaderText="Price (each)" DataFormatString="{0:c}"/>     
             <asp:BoundField DataField="Quantity" HeaderText="Quantity" />        
         </Columns>    
     </asp:GridView>

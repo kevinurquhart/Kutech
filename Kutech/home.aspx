@@ -2,10 +2,14 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type="text/css">
-      .hiddencol
-      {
+        .hiddencol
+        {
         display: none;
-      }
+        }
+        .logoImage {
+            width:70%;
+            margin-left:-10%;
+        }
     </style>
     <section class="py-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
         <div class="background-holder" style="background-image:url(assets/images/main/mainCoverTest2.jpg);"> </div>
@@ -44,12 +48,15 @@
                     <p class="px-lg-4 mt-3">We aim to be your one stop shop for all things SQL Server through our Support and Training services to suit all budgets and requirements.</p>
                     <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                 </div>
-                <div class="col-6" style="min-height:150px; max-height:150px;">
+                <%--<div class="col-6" style="min-height:150px; max-height:150px;">
                     <video autoplay="autoplay" muted="muted" style="margin-top:-100px; margin-left:-50px;">
                         <source src="assets/images/videos/SQLTrainingIntro.mp4" type="video/mp4" />
                         <source src="assets/images/videos/SQLTrainingIntro.webm" type="video/webm" />
                         <source src="assets/images/videos/SQLTrainingIntro.ogv" type="video/ogg" />
                     </video>
+                </div>--%>
+                <div class="col-6" style="min-height:150px; max-height:150px;">
+                    <asp:Image CssClass="logoImage" ID="mainLogo" runat="server" ImageUrl="~/assets/images/main/Logo.png" />
                 </div>
             </div>
             <div class="row mt-4 mt-md-5">
@@ -105,27 +112,84 @@
     </section>
     <section class="background-11">
         <div class="container">
-            <h3 class="text-center fs-2 fs-md-3">Our Training Courses</h3>
+            <h3 class="text-center fs-2 fs-md-3">SQL Related Services</h3>
             <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
         </div>
         <div class="container">
             <div class="row mt-4 mt-md-5 text-left">
                 <div class="col-lg-12 mt-4">
-                    <h6 class="mt-4">On Demand</h6>
+                    <h5 class="mt-4">On Demand Training</h5>
                     <p class="mb-0 mt-3 px-3">Purchase now for access to our online, on demand, pre-recorded training.  This includes 1 year of access to the course.</p><br />
                     <asp:GridView ID="CartList" runat="server" AutoGenerateColumns="False"
-                        ItemType="Kutech.Models.CourseTable" SelectMethod="GetCourses" 
+                        ItemType="Kutech.Models.Product" SelectMethod="GetOnlineCourses" 
                         CssClass="table" AlternatingRowStyle-BackColor="#f9f9f9" HeaderStyle-BackColor="#d9edf7">
                         <HeaderStyle CssClass="tableHeader" />
                         <Columns>
-                            <asp:BoundField DataField="courseID" HeaderText="ID" SortExpression="CourseID" HeaderStyle-CssClass="hiddencol" ItemStyle-CssClass="hiddencol" />
-                            <asp:BoundField DataField="CourseLevel" HeaderText="Level" HeaderStyle-CssClass="table1" ItemStyle-CssClass="table1"/>
-                            <asp:BoundField DataField="CourseName" HeaderText="Course Name" HeaderStyle-CssClass="table1" ItemStyle-CssClass="table1"/>
-                            <asp:BoundField DataField="courseDurationHours" HeaderText="Duration" HeaderStyle-CssClass="table3" ItemStyle-CssClass="table3"/>
-                            <asp:BoundField DataField="CoursePrice" HeaderText="Price" DataFormatString="{0:c} +VAT" HeaderStyle-CssClass="table4" ItemStyle-CssClass="table4"/>
+                            <asp:BoundField DataField="ProductID" HeaderText="ID" SortExpression="ProductID" HeaderStyle-CssClass="hiddencol" ItemStyle-CssClass="hiddencol" />
+                            <asp:BoundField DataField="ProductLevel" HeaderText="Level" HeaderStyle-CssClass="table1" ItemStyle-CssClass="table1"/>
+                            <asp:BoundField DataField="ProductName" HeaderText="Course Name" HeaderStyle-CssClass="table1" ItemStyle-CssClass="table1"/>
+                            <asp:BoundField DataField="ProductDuration" HeaderText="Duration" HeaderStyle-CssClass="table3" ItemStyle-CssClass="table3"/>
+                            <asp:BoundField DataField="ProductPrice" HeaderText="Price" DataFormatString="{0:c} +VAT" HeaderStyle-CssClass="table4" ItemStyle-CssClass="table4"/>
+                            <asp:TemplateField HeaderText="Purchase" HeaderStyle-CssClass="table5" ItemStyle-CssClass="table5">            
+                                    <ItemTemplate>
+                                        <a href="/AddToCart.aspx?ProductID=<%#:Item.ProductID %>">               
+                                            <span class="square_btnNavTable">
+                                                <b>Purchase<b>
+                                            </span>           
+                                        </a>
+                                    </ItemTemplate>     
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
+                </div>
+            </div>
+            <div class="row text-left" style="margin-top:0px;">
+                <div class="col-lg-12 mt-4">
+                    <h5>Server Health Check</h5>
+                    <p class="mb-0 mt-3 px-3">Following your purchase we will contact you within 48 hours to arrange for your SQL health check to take place.</p><br />
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"
+                        ItemType="Kutech.Models.Product" SelectMethod="GetHealthChecks" 
+                        CssClass="table" AlternatingRowStyle-BackColor="#f9f9f9" HeaderStyle-BackColor="#d9edf7">
+                        <HeaderStyle CssClass="tableHeader" />
+                        <Columns>
+                            <asp:BoundField DataField="ProductID" HeaderText="ID" SortExpression="ProductID" HeaderStyle-CssClass="hiddencol" ItemStyle-CssClass="hiddencol" />
+                            <asp:BoundField DataField="ProductLevel" HeaderText="Service" HeaderStyle-CssClass="table1" ItemStyle-CssClass="table1"/>
+                            <asp:BoundField DataField="ProductName" HeaderText="Description" HeaderStyle-CssClass="table1" ItemStyle-CssClass="table1"/>
+                            <asp:BoundField DataField="ProductDuration" HeaderText="Duration" HeaderStyle-CssClass="table3" ItemStyle-CssClass="table3"/>
+                            <asp:BoundField DataField="ProductPrice" HeaderText="Price" DataFormatString="{0:c} +VAT" HeaderStyle-CssClass="table4" ItemStyle-CssClass="table4"/>
                             <asp:TemplateField HeaderText="Book Now" HeaderStyle-CssClass="table5" ItemStyle-CssClass="table5">            
                                     <ItemTemplate>
-                                        <a href="/AddToCart.aspx?courseID=<%#:Item.CourseID %>">               
+                                        <a href="/AddToCart.aspx?ProductID=<%#:Item.ProductID %>">               
+                                            <span class="square_btnNavTable">
+                                                <b>Book Now<b>
+                                            </span>           
+                                        </a>
+                                    </ItemTemplate>     
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
+                    <div style="margin-top:-25px; margin-left:3%; width:94%;">
+                        <i style="font-size:8pt;"><b>Note</b> - In order to perform the health check we require access to the SQL Server of your choice and the ability to collect server metrics. No personal or identifying data will be collected as part of the health check.</i>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-left" style="margin-top:20px;">
+                <div class="col-lg-12 mt-4">
+                    <h5>Consultancy</h5>
+                    <p class="mb-0 mt-3 px-3">Following your purchase we will contact you within 48 hours to arrange a date for your Consultation.</p><br />
+                    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False"
+                        ItemType="Kutech.Models.Product" SelectMethod="GetConsultancy" 
+                        CssClass="table" AlternatingRowStyle-BackColor="#f9f9f9" HeaderStyle-BackColor="#d9edf7">
+                        <HeaderStyle CssClass="tableHeader" />
+                        <Columns>
+                            <asp:BoundField DataField="ProductID" HeaderText="ID" SortExpression="ProductID" HeaderStyle-CssClass="hiddencol" ItemStyle-CssClass="hiddencol" />
+                            <asp:BoundField DataField="ProductLevel" HeaderText="Service" HeaderStyle-CssClass="table1" ItemStyle-CssClass="table1"/>
+                            <asp:BoundField DataField="ProductName" HeaderText="Description" HeaderStyle-CssClass="table1" ItemStyle-CssClass="table1"/>
+                            <asp:BoundField DataField="ProductDuration" HeaderText="Duration" HeaderStyle-CssClass="table3" ItemStyle-CssClass="table3"/>
+                            <asp:BoundField DataField="ProductPrice" HeaderText="Price" DataFormatString="{0:c} +VAT" HeaderStyle-CssClass="table4" ItemStyle-CssClass="table4"/>
+                            <asp:TemplateField HeaderText="Book Now" HeaderStyle-CssClass="table5" ItemStyle-CssClass="table5">            
+                                    <ItemTemplate>
+                                        <a href="/AddToCart.aspx?ProductID=<%#:Item.ProductID %>">               
                                             <span class="square_btnNavTable">
                                                 <b>Book Now<b>
                                             </span>           
@@ -267,7 +331,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-5" style="min-height:250px;">
-                    <img src="assets/images/main/WordCloud.jpg"/>
+                    <img src="assets/images/main/WordCloudKutech.jpg"/>
                 </div>
                 <div class="col-12 col-md-7" style="min-height:250px;">
                     <img src="assets/images/main/AllLogo.jpg"/>

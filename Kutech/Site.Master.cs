@@ -84,13 +84,6 @@ namespace Kutech
             }
         }
 
-        public IQueryable<Category> GetCategories()
-        {
-            var _db = new Kutech.Models.ProductContext();
-            IQueryable<Category> query = _db.Categories;
-            return query;
-        }
-
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);

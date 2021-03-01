@@ -10,7 +10,7 @@
 
 namespace Kutech
 {
-    public partial class about
+    public partial class aboutStaff
     {
     }
 }

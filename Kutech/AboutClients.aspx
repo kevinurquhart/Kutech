@@ -1,8 +1,42 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="about.aspx.cs" Inherits="Kutech.about" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AboutClients.aspx.cs" Inherits="Kutech.About" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <style>
+        .tooltip {
+          position:relative; /* making the .tooltip span a container for the tooltip text */
+          /*border-bottom:1px dashed #000;*/ /* little indicater to indicate it's hoverable */
+        }
+        .tooltip:before {
+          content: attr(data-text); /* here's the magic */
+          position:absolute;
+  
+          /* vertically center */
+  
+          /* move to right */
+          top:100%;
+          margin-top:1px; /* and add a small left margin */
+  
+          /* basic styles */
+          width:200px;
+          font-size:10pt;
+          padding:5px;
+          border-radius:10px;
+          background:#156493;
+          color: #fff;
+          text-align:center;
+
+          display:none; /* hide by default */
+        }
+        .tooltip:hover:before {
+          display:block;
+        }
+        .tooltip.small:before{
+            width:150px;
+        }
+    </style>
     <section>
         <div>
-            <div class="background-holder overlay" style="background-image:url(assets/images/main/about.jpg);background-position: center bottom;"> </div>
+            <div class="background-holder overlay" style="background-image:url(../assets/images/main/ourClients.jpg);background-position: center bottom;"> </div>
             <!--/.background-holder-->
             <div class="container">
                 <div class="row pt-6">
@@ -14,7 +48,7 @@
                                     <li class="breadcrumb-item">
                                         <a class="color-white" href="home.aspx">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Our Clients</li>
                                 </ol>
                             </div>
                         </div>
@@ -25,45 +59,119 @@
         </div>
         <!--/.container-->
     </section>
-    <section class="background-11">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-4 py-3 py-lg-0" style="min-height:400px; background-position: top;">
-                    <div class="background-holder radius-tl-secondary radius-bl-lg-secondary radius-tr-secondary radius-tr-lg-0" style="background-image:url(assets/images/main/ceo.jpg);"> </div>
-                    <!--/.background-holder-->
+    <section class="background-white  text-center">
+        <div class="container" style="margin-top:-100px;">
+            <%--<div class="row justify-content-center">
+                <div class="col-10 col-md-6">
+                    <h3 class="color-primary fs-2 fs-lg-3">Our Clients</h3>
+                    <p class="px-lg-4 mt-3">We are an agile, professional, boutique firm specialising in all things Microsoft SQL Server.</p>
+                    <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                 </div>
-                <div class="col-lg-8 px-5 py-6 my-lg-0 background-white radius-tr-lg-secondary radius-br-secondary radius-bl-secondary radius-bl-lg-0">
-                    <div class="d-flex align-items-center h-100">
-                        <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <h5 data-zanim='{"delay":0}'>Message From CEO</h5>
-                            <%--<i><p class="my-4" data-zanim='{"delay":0.1}'>Kutech strives to help all our clients solve the hardest problems they face when using SQL Server in their businesses.<br /><br />Whether through training, monitoring, or providing support hours to plug your staffing shortfall, we are with you every step of the way. </p></i>--%>
-                            <i><p class="my-4" data-zanim='{"delay":0.1}'>Kutech was founded as a composite of our previous brands to bring all SQL Server facets under one roof.<br /><br />We now offer Training, Support Services, and Consultancy all under the one brand with an emphasis on our unparalleled Microsoft SQL Server expertise but also offering Power BI, PowerShell, Docker and more in order to give you even more rounded support than ever before.</p></i>
-                            <%--<img data-zanim='{"delay":0.2}'
-                                src="assets/images/signature.png" alt="" />--%>
-                            <h5 class="text-uppercase mt-3 fw-500 mb-1" data-zanim='{"delay":0.3}'>Kevin Urquhart</h5>
-                            <%--<h6 class="color-7 fw-600" data-zanim='{"delay":0.4}'>MCSA SQL Server 2016</h6>--%>
-                        </div>
+            </div>--%>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-sm-6 col-lg-20 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip" data-text="Barclaycard" data-zanim='{"delay":0}' style="width:200px; height:100px;">
+                        <img src="assets/images/Clients/barclaycard.jpg" alt="Barclaycard"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-20 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip" data-text="AXA Insurance" data-zanim='{"delay":0}' style="width:200px; height:100px;">
+                        <img src="assets/images/Clients/axa.jpg" alt="AXA Insurance"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-20 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip" data-text="Domino's Pizza" data-zanim='{"delay":0}' style="width:200px; height:100px;">
+                        <img src="assets/images/Clients/Dominos.jpg" alt="Domino's Pizza"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-20 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip" data-text="NHS UK" data-zanim='{"delay":0}' style="width:200px; height:100px;">
+                        <img src="assets/images/Clients/nhs.jpg" alt="NHS"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-20 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip" data-text="Berkeley Homes" data-zanim='{"delay":0}' style="width:200px; height:100px;">
+                        <img src="assets/images/Clients/berkeley.jpg" alt="Berkeley Homes"/>
                     </div>
                 </div>
             </div>
-            <div class="row mt-6">
-                <div class="col">
-                    <h3 class="text-center fs-2 fs-md-3">Company Overview</h3>
-                    <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" /> </div>
-                <div class="col-12">
-                    <div class="background-white px-3 mt-6 px-0 py-5 px-lg-5 radius-secondary">
-                        <h5>Complete Support</h5>
-                        <p class="mt-3">Our driving force is our passion for databases, technology, and particularly Microsoft SQL Server. We strive to ensure every SQL Server we encounter is running at its best and our work gets right to the heart of your SQL Server needs. We began by offering SQL Server Training Courses but over time moved into Support Services and Consultancy as more and more attendees began to call us back to ask if we could help them out with their database design, to help plan upgrades, and to assess the usefulness of the SQL Server feature set.</p>
-                        <blockquote class="blockquote my-5 ml-lg-6" style="max-width: 700px;">
-                            <h5 class="fw-500 ml-3 mb-0">Need SQL Server Support? We have you covered, providing everything you need, every step of the way &hellip;</h5>
-                        </blockquote>
-                        <p class="column-lg-2 dropcap">Branching out into this new world left us with several brands and no clear identity as we offered Training, Support Services, Consultancy, Monitoring, and Interview help with each operating under their own logo and websites.  Thus, Kutech was born, pulling all services under the one roof. In addition, we have realised during our adventures that clients rarely need SQL Server alone as in-house reporting and automation solutions are written in a combination of T-SQL, PowerShell and Power BI, and development teams regularly now utilise Docker environments. As such, we are happy to also cater for these areas in addition to our deep SQL Server expertise and hope that, as prospective new clients, we can help support you in any of your endeavours and with whichever technology you use alongside your SQL Server environment.</p>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-sm-6 col-lg-2 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip small" data-text="CAE Ltd" data-zanim='{"delay":0}' style="width:150px; height:75px;">
+                        <img src="assets/images/Clients/cae.jpg" alt="CAE Ltd"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip small" data-text="Financial Express Ltd" data-zanim='{"delay":0}' style="width:150px; height:75px;">
+                        <img src="assets/images/Clients/fe.jpg" alt="Financial Express Ltd"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip small" data-text="PSE Ltd" data-zanim='{"delay":0}' style="width:150px; height:75px;">
+                        <img src="assets/images/Clients/pse.jpg" alt="PSE Ltd"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip small" data-text="Credit Benchmark" data-zanim='{"delay":0}' style="width:150px; height:75px;">
+                        <img src="assets/images/Clients/creditbenchmark.jpg" alt="Credit Benchmark Ltd"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip small" data-text="StudyGroup" data-zanim='{"delay":0}' style="width:150px; height:75px;">
+                        <img src="assets/images/Clients/studygroup.jpg" alt="StudyGroup Plc"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip small" data-text="Essex Cares Ltd" data-zanim='{"delay":0}' style="width:150px; height:75px;">
+                        <img src="assets/images/Clients/ecl.jpg" alt="Essex Cares Ltd"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip" data-text="Bluebay Asset Management" data-zanim='{"delay":0}' style="width:200px; height:100px;">
+                        <img src="assets/images/Clients/bluebay.jpg" alt="Bluebay Asset Management"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip" data-text="ICAEW" data-zanim='{"delay":0}' style="width:200px; height:100px;">
+                        <img src="assets/images/Clients/icaew.jpg" alt="ICAEW"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip" data-text="RPMI Railpen Ltd" data-zanim='{"delay":0}' style="width:200px; height:100px;">
+                        <img src="assets/images/Clients/rpmi.jpg" alt="RPMI Railpen Ltd"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
+                    <div class="mx-auto align-items-center tooltip" data-text="Intuitive" data-zanim='{"delay":0}' style="width:200px; height:100px;">
+                        <img src="assets/images/Clients/intuitive.jpg" alt="Intuitive"/>
                     </div>
                 </div>
             </div>
             <!--/.row-->
         </div>
         <!--/.container-->
+    </section>
+    <section class="background-white">
+        <div class="container" style="margin-top:-120px;">
+            <div class="row mt-6">
+                <div class="col">
+                    <h3 class="text-center fs-2 fs-md-3" style="margin-top:-40px;">Proud Sponsors Of...</h3>
+                    <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
+                </div>
+            </div>
+            <div class="row mt-6">
+                <div class="col align-items-center text-center">
+                    <img src="assets/images/Clients/SQLBits2020.jpg" alt="SQLBits 2020"/>
+                </div>
+            </div>
+            <div class="row mt-6">
+                <div class="col align-items-center text-center">
+                    <img src="assets/images/Clients/SQLBits2019.jpg" alt="SQLBits 2019"/>
+                </div>
+            </div>
+        </div>
     </section>
     <section>
         <div class="background-holder overlay overlay-elixir" style="background-image:url(assets/images/main/strive1.jpg);"> </div>
@@ -79,7 +187,7 @@
                                     <br />
                                     <span class="color-white">strive to improve.</span>
                                 </h2>
-                                <div class="row mt-4 pr-lg-10">
+                                <div id="divStrive" runat="server" class="row mt-4 pr-lg-10">
                                     <div class="col-md-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                         <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>24</div>
                                         <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>Monitored Instances</h6>

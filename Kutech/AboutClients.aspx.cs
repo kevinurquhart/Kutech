@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Kutech
 {
-    public partial class about : System.Web.UI.Page
+    public partial class About : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

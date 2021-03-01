@@ -48,5 +48,40 @@ namespace Kutech.Logic
 
             return getOnlineProductList(mySQL.fetchDataSet("select * from web.Product where productType = 'Consultancy' and productDelivery = 'Remote';"));
         }
+
+        public DataSet getUserCourses(string userName)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec web.getUserCourses '" + userName + "'");
+        }
+
+        public DataSet getVideoAccess(string userName, string courseID, string moduleID)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec web.checkVideoAccess '" + userName + "'," + courseID + ", " + moduleID);
+        }
+
+        public DataSet getAccountDetails(string userName)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec web.getAccountDetails '" + userName + "'");
+        }
+
+        public DataSet getInvoice(string orderID)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec web.getInvoice '" + orderID + "'");
+        }
+
+        public DataSet getUserResources(string userName)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec web.getUserResources '" + userName + "'");
+        }
     }
 }

@@ -1,49 +1,80 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckoutReview.aspx.cs" Inherits="Kutech.Checkout.CheckoutReview" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Order Review</h1>
-    <p></p>
-    <h3 style="padding-left: 33px">Products:</h3>
-    <asp:GridView ID="OrderItemList" runat="server" AutoGenerateColumns="False" GridLines="Both" CellPadding="10" Width="500" BorderColor="#efeeef" BorderWidth="33">              
+    <div style="margin-top:100px;"></div>
+    <div class="container">
+    <div id="ShoppingCartTitle" runat="server" class="ContentHead"><h2>Order Review</h2></div>
+        <br />
+    <h4 style="padding-left: 33px">Products:</h4>
+    <div style="width:90%; margin-left:5%;">
+    <asp:GridView ID="OrderItemList" runat="server" AutoGenerateColumns="False" GridLines="Both" CellPadding="10"
+        CssClass="table" AlternatingRowStyle-BackColor="#f9f9f9" HeaderStyle-BackColor="#d9edf7">              
         <Columns>
-            <asp:BoundField DataField="ProductID" HeaderText=" Product ID" />        
-            <asp:BoundField DataField="Product.ProductName" HeaderText=" Product Name" />        
-            <asp:BoundField DataField="Product.ProductPrice" HeaderText="Price (each)" DataFormatString="{0:c}"/>     
-            <asp:BoundField DataField="Quantity" HeaderText="Quantity" />        
+            <asp:BoundField DataField="ProductID" HeaderText=" Product ID" HeaderStyle-Width="20%" />        
+            <asp:BoundField DataField="Product.ProductName" HeaderText=" Product Name" HeaderStyle-Width="40%" />        
+            <asp:BoundField DataField="Product.ProductPrice" HeaderText="Price (each)" DataFormatString="{0:c}" HeaderStyle-Width="20%" />     
+            <asp:BoundField DataField="Quantity" HeaderText="Quantity" HeaderStyle-Width="20%" />        
         </Columns>    
     </asp:GridView>
+    </div>
     <asp:DetailsView ID="ShipInfo" runat="server" AutoGenerateRows="false" GridLines="None" CellPadding="10" BorderStyle="None" CommandRowStyle-BorderStyle="None">
         <Fields>
         <asp:TemplateField>
             <ItemTemplate>
                 <h3>Shipping Address:</h3>
                 <br />
-                <asp:Label ID="FirstName" runat="server" Text='<%#: Eval("FirstName") %>'></asp:Label>  
-                <asp:Label ID="LastName" runat="server" Text='<%#: Eval("LastName") %>'></asp:Label>
-                <br />
-                <asp:Label ID="Address" runat="server" Text='<%#: Eval("Address") %>'></asp:Label>
-                <br />
-                <asp:Label ID="City" runat="server" Text='<%#: Eval("City") %>'></asp:Label>
-                <asp:Label ID="State" runat="server" Text='<%#: Eval("State") %>'></asp:Label>
-                <asp:Label ID="PostalCode" runat="server" Text='<%#: Eval("PostalCode") %>'></asp:Label>
+                <asp:Label ID="Email" runat="server" Text='<%#: Eval("Email") %>'></asp:Label>
                 <p></p>
                 <h3>Order Total:</h3>
                 <br />
-                <asp:Label ID="Total" runat="server" Text='<%#: Eval("Total", "{0:C}") %>'></asp:Label>
+                <%--<asp:Label ID="Total" runat="server" Text='<%#: Eval("Total", "{0:C}") %>'></asp:Label>--%>
             </ItemTemplate>
             <ItemStyle HorizontalAlign="Left" />
         </asp:TemplateField>
           </Fields>
     </asp:DetailsView>
+    <div style="width:90%; margin-left:5%; margin-top:-25px;">
+        <table> 
+        <tr>
+          <td style="width:175px;">
+            <asp:Label ID="lblNetText" runat="server" Text="Order Net Total: "></asp:Label>
+          </td>
+          <td style="width:100px; text-align:right;">
+            <asp:Label ID="lblNetTotal" runat="server" EnableViewState="false" CssClass="labelTotals" Text="Things"></asp:Label><br />
+          </td>
+        </tr>
+        </table>
+        <table> 
+        <tr>
+          <td style="width:175px;">
+            <asp:Label ID="lblVATText" runat="server" Text="Order VAT Total: "></asp:Label>
+          </td>
+          <td style="width:100px; text-align:right;">
+            <asp:Label ID="lblVATTotal" runat="server" EnableViewState="false" CssClass="labelTotals" Text="Things"></asp:Label><br />
+          </td>
+        </tr>
+        </table>
+        <table> 
+        <tr>
+          <td style="width:175px; font-weight:bold;">
+            <asp:Label ID="LabelTotalText" runat="server" Text="Order Gross Total: "></asp:Label>
+          </td>
+          <td style="width:100px; text-align:right; font-weight:bold;">
+            <asp:Label ID="lblTotal" runat="server" EnableViewState="false" CssClass="labelTotals" Text="Things"></asp:Label><br />
+          </td>
+        </tr>
+        </table>
+    </div>
     <p></p>
     <hr />
     <%--<script src="https://www.paypal.com/sdk/js?client-id=AUH-tXGJyMrpROdPBHc4PsRVccUAMKgfp1mURJbsS6bhcNxdkKnKsQZEYUYMiTuoUp6j41Cketr22Zs1&currency=GBP" data-sdk-integration-source="button-factory"></script>--%>
     <script src="https://www.paypal.com/sdk/js?client-id=AbdPqOUASmko60fw3y5OUV9-P5yJbdM0NE0fj3hxX0usO1rTjL7kmhbyVL-jVyKsifrSKFwh2lOUHkkW&currency=GBP" data-sdk-integration-source="button-factory"></script>
 
-    <div id="paypal-button-container">
+    <div id="paypal-button-container" style="width:60%; margin-left:20%;">
         <div id="orderIDDiv" style="display: none;">
             <input style="visibility:hidden;" name="orderID" maxlength="127" type="text" id="orderID" runat="server" value="1234" >
             <input style="visibility:hidden;" name="bob" type="text" id="bob" runat="server" value="1" />
         </div>
+    </div>
     </div>
 
     <script>
@@ -97,4 +128,5 @@
         initPayPalButton();
     // This function displays Smart Payment Buttons on your web page.
     </script>
+
 </asp:Content>

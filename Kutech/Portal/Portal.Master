@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Kutech.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Portal.master.cs" Inherits="Kutech.Portal.Portal" %>
 
 <!DOCTYPE html>
 
@@ -113,95 +113,22 @@
 							<li>
 								<a runat="server" href="~/">Home</a>
 							</li>
-							<li>
-								<a href="JavaScript:void(0)">About</a>
-								<ul class="dropdown fs--1">
-									<li>
-										<a href="about.aspx">Our Company</a>
-									</li>
-									<li>
-										<a href="aboutClients.aspx">Our Clients</a>
-									</li>
-									<li>
-										<a href="aboutStaff.aspx">Our Staff</a>
-									</li>
-									<li>
-										<a href="aboutBlog.aspx">Our Blogs</a>
-									</li>
-								</ul>
-							</li>
                             <li>
-								<a href="JavaScript:void(0)">Training</a>
-								<ul class="dropdown fs--1">
-									<li>
-										<a href="#">Courses</a>
-									</li>
-									<li>
-										<a href="#">Course Dates</a>
-									</li>
-									<%--<li>
-										<a href="#">Locations</a>
-									</li>--%>
-									<li>
-										<a href="#">FAQs</a>
-									</li>
-								</ul>
+								<a href="dashboard.aspx">Dashboard</a>
 							</li>
-							<li>
-								<a href="#">Consultancy</a>
-							</li>
-							<li>
-								<a href="JavaScript:void(0)">Support</a>
-								<ul class="dropdown fs--1">
-									<li>
-										<a href="#">Remote DBA</a>
-									</li>
-									<li>
-										<a href="#">Health Checks</a>
-									</li>
-									<li>
-										<a href="#">Monitoring</a>
-									</li>
-								</ul>
-							</li>
+							<%--<li>
+								<a href="courses.aspx">Courses</a>
+							</li>--%>
                             <li>
-								<a href="JavaScript:void(0)">Interviews</a>
-								<ul class="dropdown fs--1">
-									<li>
-										<a href="#">Automated</a>
-									</li>
-									<li>
-										<a href="#">In-Person</a>
-									</li>
-								</ul>
+								<a href="receipts.aspx">Receipts</a>
 							</li>
 							<li>
-								<a href="JavaScript:void(0)">Blogs</a>
-								<ul class="dropdown fs--1">
-									<li>
-										<a href="#">SQL Server</a>
-									</li>
-									<li>
-										<a href="#">PowerShell</a>
-									</li>
-									<%--<li>
-										<a href="#">C#</a>
-									</li>
-                                    <li>
-										<a href="#">Power BI</a>
-									</li>--%>
-									<li>
-										<a href="#">Docker</a>
-									</li>
-								</ul>
-							</li>
-                            <li>
-								<a class="d-block mr-md-9" runat="server" href="~/Portal/dashboard.aspx">Portal</a>
+								<a href="resources.aspx">Resources</a>
 							</li>
                         </ul>
 						<ul class="navbar-nav ml-lg-auto">
 							<li>
-								<a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" href="../contact.aspx">Contact</a>
+								<a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" runat="server" href="~/Portal/contact.aspx">Contact</a>
 							</li>
 						</ul>
                     </div>
@@ -209,101 +136,8 @@
             </div>
         </div>
         <div style="margin-top:60px;"></div>
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        </asp:ContentPlaceHolder>
-        <section style="background-color: #3387b3;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="background-primary color-white p-5 p-lg-6 radius-secondary">
-                            <h4 class="color-white fs-1 fs-lg-2 mb-1">Sign up for email alerts</h4>
-                            <p class="color-white">Stay current with our latest insights</p>
-                            <div class="mt-4">
-                                <div class="row align-items-center">
-                                    <div class="col-md-7 pr-md-0">
-                                        <div class="input-group">
-                                            <input id="newsletter" runat="server" class="form-control" type="email" placeholder="Enter Email Here" aria-label="Enter Email Here" />
-                                            <input runat="server" type="text" id="newsletterName" name="name" placeholder="Full Name" class="subject" aria-label="Full Name" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 mt-3 mt-md-0">
-                                        <asp:UpdatePanel ID="UpdatePanel2" runat="server">
-                                            <ContentTemplate>
-                                                <%--<asp:Button ID="newsletterButton" CssClass="btn btn-warning btn-block" runat="server" Text="Submit" OnClick="newsletterButton_Click"/>--%>
-                                                <asp:Button ID="newsletterButton" CssClass="btn btn-warning btn-block" runat="server" Text="Submit"/>
-                                            </ContentTemplate>
-                                        </asp:UpdatePanel>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-4 mt-lg-0">
-                        <div class="row">
-                            <div class="col-6 col-lg-4 color-white ml-lg-auto">
-                                <ul class="list-unstyled">
-                                    <li class="mb-3">
-                                        <a class="color-white" target="_blank" href="https://www.SQLWorld.co.uk/contact.aspx">Contact Us</a>
-                                    </li>
-                                    <li class="mb-3">
-                                        <a class="color-white" href="../faq.aspx">FAQ</a>
-                                    </li>
-                                    <li class="mb-3">
-                                        <a class="color-white" target="_blank" href="https://www.SQLWorld.co.uk/privacy.aspx">Privacy Policy</a>
-                                    </li>
-                                    <li class="mb-3">
-                                        <a class="color-white" target="_blank" href="https://www.SQLWorld.co.uk/terms.aspx">Terms of Use</a>
-                                    </li>
-                                    <li class="mb-3">
-                                        <a class="color-white" target="_blank" href="https://www.SQLWorld.co.uk/contact.aspx">Our Office</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-sm-5 ml-sm-auto">
-                                <a id="linkLinkedIn" runat="server" href="https://www.linkedin.com/company/sql-training-ltd" target="_blank" rel="noreferrer">
-                                    <div class="row mb-3 align-items-center no-gutters">
-                                        <div class="col-auto">
-                                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                                <span class="w-100 fa fa-linkedin color-white"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 pl-3">
-                                            <h5 class="fs-0 color-white mb-0 d-inline-block">Linkedin</h5>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a id="linkTwitter" runat="server" href="https://twitter.com/SQLSolvedUK" target="_blank" rel="noreferrer">
-                                    <div class="row mb-3 align-items-center no-gutters">
-                                        <div class="col-auto">
-                                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                                <span class="w-100 fa fa-twitter color-white"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 pl-3">
-                                            <h5 class="fs-0 color-white mb-0 d-inline-block">Twitter</h5>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a id="linkFacebook" runat="server" href="https://www.facebook.com/SQLSolvedUK" target="_blank" rel="noreferrer">
-                                    <div class="row mb-3 align-items-center no-gutters">
-                                        <div class="col-auto">
-                                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                                <span class="w-100 fa fa-facebook color-white"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 pl-3">
-                                            <h5 class="fs-0 color-white mb-0 d-inline-block">Facebook</h5>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/.row-->
-            </div>
-            <!--/.container-->
-        </section>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
         <section class="background-primary text-center py-4">
             <div class="container">
                 <div class="row align-items-center" style="opacity: 0.85;">

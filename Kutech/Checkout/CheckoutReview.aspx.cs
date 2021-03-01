@@ -56,7 +56,11 @@ namespace Kutech.Checkout
                 // Set OrderId.
                 Session["currentOrderId"] = myOrder.OrderId;
                 orderID.Value = myOrder.OrderId.ToString();
-                bob.Value = myOrder.Total.ToString();
+                bob.Value = (myOrder.Total * (decimal)1.2).ToString();
+
+                lblNetTotal.Text = String.Format("{0:c}", myOrder.Total);
+                lblVATTotal.Text = String.Format("{0:c}", (myOrder.Total / 5));
+                lblTotal.Text = String.Format("{0:c}", myOrder.Total * (decimal)1.2);
 
                 // Display Order information.
                 List<Order> orderList = new List<Order>();

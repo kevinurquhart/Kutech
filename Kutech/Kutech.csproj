@@ -364,6 +364,12 @@
     <Content Include="assets\lib\jquery.mb.ytplayer\dist\css\font\ytp-regular.woff" />
     <Content Include="assets\lib\lightbox2\dist\js\lightbox-plus-jquery.min.map" />
     <Content Include="assets\lib\lightbox2\dist\js\lightbox.min.map" />
+    <Content Include="Portal\Dashboard.aspx" />
+    <Content Include="Portal\receipts.aspx" />
+    <Content Include="Portal\resources.aspx" />
+    <Content Include="Portal\stream.aspx" />
+    <Content Include="Portal\Web.config" />
+    <Content Include="Portal\Portal.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -607,6 +613,41 @@
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductContext.cs" />
+    <Compile Include="Portal\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\Portal.Master.cs">
+      <DependentUpon>Portal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\Portal.Master.designer.cs">
+      <DependentUpon>Portal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\receipts.aspx.cs">
+      <DependentUpon>receipts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\receipts.aspx.designer.cs">
+      <DependentUpon>receipts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\resources.aspx.cs">
+      <DependentUpon>resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\resources.aspx.designer.cs">
+      <DependentUpon>resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\stream.aspx.cs">
+      <DependentUpon>stream.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\stream.aspx.designer.cs">
+      <DependentUpon>stream.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>

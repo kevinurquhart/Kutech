@@ -28,25 +28,11 @@ namespace Kutech.Logic
             return courseList;
         }
 
-        public List<Product> getOnlineCourses()
+        public List<Product> getWebProduct(string type, string delivery)
         {
             SQLClass mySQL = new SQLClass();
 
-            return getOnlineProductList(mySQL.fetchDataSet("select * from web.Product where productType = 'Course' and productDelivery = 'Online';"));
-        }
-
-        public List<Product> getHealthChecks()
-        {
-            SQLClass mySQL = new SQLClass();
-
-            return getOnlineProductList(mySQL.fetchDataSet("select * from web.Product where productType = 'Health Check' and productDelivery = 'Remote';"));
-        }
-
-        public List<Product> getConsultancy()
-        {
-            SQLClass mySQL = new SQLClass();
-
-            return getOnlineProductList(mySQL.fetchDataSet("select * from web.Product where productType = 'Consultancy' and productDelivery = 'Remote';"));
+            return getOnlineProductList(mySQL.fetchDataSet("web.getWebProduct '" + type + "', '" + delivery + "'"));
         }
 
         public DataSet getUserCourses(string userName)
@@ -82,6 +68,27 @@ namespace Kutech.Logic
             SQLClass mySQL = new SQLClass();
 
             return mySQL.fetchDataSet("exec web.getUserResources '" + userName + "'");
+        }
+
+        public void sendMail(string contactName, string contactEmail, string contactMessage)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            mySQL.executeNone("exec emailProc 'SQLWorld Contact Form', '" + contactName + "', '" + contactEmail + "', null, '" + contactMessage + "'");
+        }
+
+        public DataSet getCourseSales()
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec web.getCourseSales");
+        }
+
+        public DataSet getCourseSalesAll()
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec web.getCourseSales 1");
         }
     }
 }

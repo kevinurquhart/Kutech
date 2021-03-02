@@ -402,6 +402,11 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Training\courseDates.aspx" />
+    <Content Include="Training\courses.aspx" />
+    <Content Include="Training\FAQs.aspx" />
+    <Content Include="Training\locations.aspx" />
+    <Content Include="Training\training.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -671,6 +676,41 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Training\courseDates.aspx.cs">
+      <DependentUpon>courseDates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\courseDates.aspx.designer.cs">
+      <DependentUpon>courseDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\courses.aspx.cs">
+      <DependentUpon>courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\courses.aspx.designer.cs">
+      <DependentUpon>courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\FAQs.aspx.cs">
+      <DependentUpon>FAQs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\FAQs.aspx.designer.cs">
+      <DependentUpon>FAQs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\locations.aspx.cs">
+      <DependentUpon>locations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\locations.aspx.designer.cs">
+      <DependentUpon>locations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\training.aspx.cs">
+      <DependentUpon>training.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\training.aspx.designer.cs">
+      <DependentUpon>training.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

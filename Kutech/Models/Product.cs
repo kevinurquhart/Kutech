@@ -24,5 +24,8 @@ namespace Kutech.Models
 
         [Required, StringLength(25), Display(Name = "Delivery")]
         public string ProductDelivery { get; set; }
+
+        [Required, StringLength(25), Display(Name = "Date")]
+        public string ProductDate { get; set; }
     }
 }

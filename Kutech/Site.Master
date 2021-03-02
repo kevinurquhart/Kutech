@@ -117,33 +117,36 @@
 								<a href="JavaScript:void(0)">About</a>
 								<ul class="dropdown fs--1">
 									<li>
-										<a href="about.aspx">Our Company</a>
+										<a runat="server" href="~/about.aspx">Our Company</a>
 									</li>
 									<li>
-										<a href="aboutClients.aspx">Our Clients</a>
+										<a runat="server" href="~/aboutClients.aspx">Our Clients</a>
 									</li>
 									<li>
-										<a href="aboutStaff.aspx">Our Staff</a>
+										<a runat="server" href="~/aboutStaff.aspx">Our Staff</a>
 									</li>
 									<li>
-										<a href="aboutBlog.aspx">Our Blogs</a>
+										<a runat="server" href="~/aboutBlog.aspx">Our Blogs</a>
 									</li>
 								</ul>
 							</li>
                             <li>
 								<a href="JavaScript:void(0)">Training</a>
 								<ul class="dropdown fs--1">
-									<li>
-										<a href="#">Courses</a>
+                                    <li>
+										<a runat="server" href="~/Training/summary.aspx">Summary</a>
 									</li>
 									<li>
-										<a href="#">Course Dates</a>
+										<a runat="server" href="~/Training/courses.aspx">Courses</a>
+									</li>
+									<li>
+										<a runat="server" href="~/Training/courseDates.aspx">Course Dates</a>
 									</li>
 									<%--<li>
 										<a href="#">Locations</a>
 									</li>--%>
 									<li>
-										<a href="#">FAQs</a>
+										<a runat="server" href="~/Training/FAQS.aspx">FAQs</a>
 									</li>
 								</ul>
 							</li>
@@ -201,7 +204,7 @@
                         </ul>
 						<ul class="navbar-nav ml-lg-auto">
 							<li>
-								<a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" href="../contact.aspx">Contact</a>
+								<a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" runat="server" href="~/contact.aspx">Contact</a>
 							</li>
 						</ul>
                     </div>
@@ -293,6 +296,18 @@
                                         </div>
                                         <div class="col-6 pl-3">
                                             <h5 class="fs-0 color-white mb-0 d-inline-block">Facebook</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a id="A1" runat="server" href="https://www.facebook.com/SQLSolvedUK" target="_blank" rel="noreferrer">
+                                    <div class="row mb-3 align-items-center no-gutters">
+                                        <div class="col-auto">
+                                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                                <span class="w-100 fa fa-youtube color-white"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pl-3">
+                                            <h5 class="fs-0 color-white mb-0 d-inline-block">YouTube</h5>
                                         </div>
                                     </div>
                                 </a>

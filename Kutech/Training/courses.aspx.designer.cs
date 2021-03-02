@@ -7,74 +7,56 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kutech
+namespace Kutech.Training
 {
 
 
-    public partial class Contact
+    public partial class courses
     {
 
         /// <summary>
-        /// mainLogo control.
+        /// gridCourse1D control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image mainLogo;
+        protected global::System.Web.UI.WebControls.GridView gridCourse1D;
 
         /// <summary>
-        /// contactSubject control.
+        /// courseGrid1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText contactSubject;
+        protected global::System.Web.UI.WebControls.GridView courseGrid1;
 
         /// <summary>
-        /// contactName control.
+        /// courseGrid2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText contactName;
+        protected global::System.Web.UI.WebControls.GridView courseGrid2;
 
         /// <summary>
-        /// contactEmail control.
+        /// courseGrid3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl contactEmail;
+        protected global::System.Web.UI.WebControls.GridView courseGrid3;
 
         /// <summary>
-        /// contactText control.
+        /// courseGrid4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea contactText;
-
-        /// <summary>
-        /// UpdatePanel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
-
-        /// <summary>
-        /// contactSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button contactSubmit;
+        protected global::System.Web.UI.WebControls.GridView courseGrid4;
     }
 }

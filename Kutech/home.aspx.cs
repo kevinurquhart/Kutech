@@ -18,17 +18,17 @@ namespace Kutech
 
         public List<Product> GetOnlineCourses()
         {
-            return myDAL.getOnlineCourses();
+            return myDAL.getWebProduct("Course", "Online");
         }
 
         public List<Product> GetHealthChecks()
         {
-            return myDAL.getHealthChecks();
+            return myDAL.getWebProduct("Health Check", "Remote");
         }
 
         public List<Product> GetConsultancy()
         {
-            return myDAL.getConsultancy();
+            return myDAL.getWebProduct("Consultancy", "Remote");
         }
     }
 }

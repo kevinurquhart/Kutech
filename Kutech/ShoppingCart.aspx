@@ -12,6 +12,7 @@
         <asp:BoundField DataField="ProductID" HeaderText="ProductID" SortExpression="ProductID" HeaderStyle-CssClass="table4" ItemStyle-CssClass="table4" HeaderStyle-Width="100"/>
         <asp:BoundField DataField="Product.ProductType" HeaderText="Product Type" HeaderStyle-CssClass="table2" ItemStyle-CssClass="table2" HeaderStyle-Width="110"/>
         <asp:BoundField DataField="Product.ProductName" HeaderText="Product Name" HeaderStyle-CssClass="table2" ItemStyle-CssClass="table2"/>
+        <asp:BoundField DataField="Product.ProductDate" HeaderText="Date" HeaderStyle-CssClass="table2" ItemStyle-CssClass="table2"/>
         <asp:BoundField DataField="Product.ProductPrice" HeaderText="Price (each)" DataFormatString="{0:c}" HeaderStyle-CssClass="table4" ItemStyle-CssClass="table4"/>
         <asp:TemplateField   HeaderText="Quantity" HeaderStyle-CssClass="table3" ItemStyle-CssClass="table3">
                 <ItemTemplate>

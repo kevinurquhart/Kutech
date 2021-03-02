@@ -90,5 +90,12 @@ namespace Kutech.Logic
 
             return mySQL.fetchDataSet("exec web.getCourseSales 1");
         }
+
+        public DataSet getRateComparison()
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec web.rateCheck");
+        }
     }
 }

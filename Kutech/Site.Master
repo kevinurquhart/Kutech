@@ -134,7 +134,7 @@
 								<a href="JavaScript:void(0)">Training</a>
 								<ul class="dropdown fs--1">
                                     <li>
-										<a runat="server" href="~/Training/summary.aspx">Summary</a>
+										<a runat="server" href="~/Training/training.aspx">Summary</a>
 									</li>
 									<li>
 										<a runat="server" href="~/Training/courses.aspx">Courses</a>
@@ -157,13 +157,13 @@
 								<a href="JavaScript:void(0)">Support</a>
 								<ul class="dropdown fs--1">
 									<li>
-										<a href="#">Remote DBA</a>
+										<a runat="server" href="~/Support/RemoteDBA.aspx">Remote DBA</a>
 									</li>
 									<li>
-										<a href="#">Health Checks</a>
+										<a runat="server" href="~/Support/healthcheck.aspx">Health Checks</a>
 									</li>
 									<li>
-										<a href="#">Monitoring</a>
+										<a runat="server" href="~/Support/prices.aspx">Our Prices</a>
 									</li>
 								</ul>
 							</li>

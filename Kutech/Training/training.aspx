@@ -289,7 +289,7 @@
                     </h5>
                     <p class="mt-3 pr-3 pr-lg-5 mb-0" data-zanim='{"delay":0.1}'>
                         Have a question? Fill in our simple contact form.
-                        <a href="https://www.SQLWorld.co.uk/contact.aspx">
+                        <a runat="server" href="~/contact.aspx">
                             Send message
                             <span class="fa fa-external-link ml-1 icon-position-fix"></span>
                         </a>

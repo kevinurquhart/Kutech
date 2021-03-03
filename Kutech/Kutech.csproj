@@ -260,6 +260,7 @@
     <Content Include="assets\lib\semantic-ui-transition\transition.min.css" />
     <Content Include="assets\lib\semantic-ui-transition\transition.min.js" />
     <Content Include="assets\lib\typed.js\lib\typed.min.js" />
+    <Content Include="Blog\SQLServer.aspx" />
     <Content Include="Catalog\Images\boatbig.png" />
     <Content Include="Catalog\Images\boatpaper.png" />
     <Content Include="Catalog\Images\boatsail.png" />
@@ -303,6 +304,7 @@
     <Content Include="Checkout\CheckoutError.aspx" />
     <Content Include="Checkout\CheckoutReview.aspx" />
     <Content Include="Checkout\CheckoutStart.aspx" />
+    <Content Include="Consultancy\consultancy.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -370,6 +372,7 @@
     <Content Include="Portal\stream.aspx" />
     <Content Include="Portal\Web.config" />
     <Content Include="Portal\Portal.Master" />
+    <Content Include="blog.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\logo.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -405,11 +408,16 @@
     <Content Include="Support\healthcheck.aspx" />
     <Content Include="Support\prices.aspx" />
     <Content Include="Support\remoteDBA.aspx" />
+    <Content Include="Training\accidentalDBA.aspx" />
+    <Content Include="Training\AnIntroductionToTSQL.aspx" />
     <Content Include="Training\courseDates.aspx" />
     <Content Include="Training\courses.aspx" />
+    <Content Include="Training\DeepDiveTSQLPerformanceTuning.aspx" />
     <Content Include="Training\FAQs.aspx" />
     <Content Include="Training\locations.aspx" />
+    <Content Include="Training\SQLServerDatabaseAdministration.aspx" />
     <Content Include="Training\training.aspx" />
+    <Content Include="Training\TSQLForDevelopers.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -560,6 +568,20 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="blog.Master.cs">
+      <DependentUpon>blog.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blog.Master.designer.cs">
+      <DependentUpon>blog.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Blog\SQLServer.aspx.cs">
+      <DependentUpon>SQLServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog\SQLServer.aspx.designer.cs">
+      <DependentUpon>SQLServer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Checkout\CheckoutCancel.aspx.cs">
       <DependentUpon>CheckoutCancel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -594,6 +616,13 @@
     </Compile>
     <Compile Include="Checkout\CheckoutStart.aspx.designer.cs">
       <DependentUpon>CheckoutStart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultancy\consultancy.aspx.cs">
+      <DependentUpon>consultancy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultancy\consultancy.aspx.designer.cs">
+      <DependentUpon>consultancy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -700,6 +729,20 @@
     <Compile Include="Support\remoteDBA.aspx.designer.cs">
       <DependentUpon>remoteDBA.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Training\accidentalDBA.aspx.cs">
+      <DependentUpon>accidentalDBA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\accidentalDBA.aspx.designer.cs">
+      <DependentUpon>accidentalDBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\AnIntroductionToTSQL.aspx.cs">
+      <DependentUpon>AnIntroductionToTSQL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\AnIntroductionToTSQL.aspx.designer.cs">
+      <DependentUpon>AnIntroductionToTSQL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Training\courseDates.aspx.cs">
       <DependentUpon>courseDates.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -713,6 +756,13 @@
     </Compile>
     <Compile Include="Training\courses.aspx.designer.cs">
       <DependentUpon>courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\DeepDiveTSQLPerformanceTuning.aspx.cs">
+      <DependentUpon>DeepDiveTSQLPerformanceTuning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\DeepDiveTSQLPerformanceTuning.aspx.designer.cs">
+      <DependentUpon>DeepDiveTSQLPerformanceTuning.aspx</DependentUpon>
     </Compile>
     <Compile Include="Training\FAQs.aspx.cs">
       <DependentUpon>FAQs.aspx</DependentUpon>
@@ -728,12 +778,26 @@
     <Compile Include="Training\locations.aspx.designer.cs">
       <DependentUpon>locations.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Training\SQLServerDatabaseAdministration.aspx.cs">
+      <DependentUpon>SQLServerDatabaseAdministration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\SQLServerDatabaseAdministration.aspx.designer.cs">
+      <DependentUpon>SQLServerDatabaseAdministration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Training\training.aspx.cs">
       <DependentUpon>training.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Training\training.aspx.designer.cs">
       <DependentUpon>training.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Training\TSQLForDevelopers.aspx.cs">
+      <DependentUpon>TSQLForDevelopers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Training\TSQLForDevelopers.aspx.designer.cs">
+      <DependentUpon>TSQLForDevelopers.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -746,6 +810,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\lib\iconsmind2\" />
+    <Folder Include="Blog\images\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

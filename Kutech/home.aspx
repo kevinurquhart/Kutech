@@ -12,39 +12,30 @@
         }
     </style>
     <section class="py-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-        <div class="background-holder" style="background-image:url(assets/images/main/mainCoverTest2.jpg);"> </div>
+        <div class="background-holder mainBackground"> </div>
         <div class="container">
-            <div class="row h-full py-8 align-items-center">
-                <div class="col-sm-8 col-lg-7">
-                    <div class="overflow-hidden">
-                        <%--<h1 class="fs-4 fs-md-5 color-white zopacity" data-zanim='{"delay":0.5}'>Professional SQL Server Training & Support Services</h1>--%>
-                        <h1 class="fs-4 fs-md-5 color-white zopacity" data-zanim='{"delay":0.5}'>SQL Server Training, Consulting, and Support Services</h1>
-                    </div>
-                    <div class="overflow-hidden">
-                        <p class="color-white mt-4 mb-5 lh-2 fs-1 fs-md-2 zopacity" data-zanim='{"delay":0.6}'>Let Kutech look after your database needs no matter what the challenge may be.</p>
-                    </div>
-                    <div class="overflow-hidden">
-                        <div class="zopacity" data-zanim='{"delay":0.7}'>
-                            <a class="btn btn-primary mr-3 mt-3" href="#">Support Services
-                                <span class="fa fa-chevron-right ml-2"></span>
-                            </a>
-                            <a class="btn btn-warning mt-3" href="#">Training Courses
-                                <span class="fa fa-chevron-right ml-2"></span>
-                            </a>
-                        </div>
+            <div class="row h-full60 py-8 align-items-center">
+                <div class="align-items-center text-center overflow-hidden mainText">
+                    <h1 class="fs-4 fs-md-4 color-white zopacity" data-zanim='{"delay":0.5}'>SQL Server Training, Consulting, and Support Services</h1>
+                </div>
+                <div class="align-items-center text-center overflow-hidden mainButtons">
+                    <div class="zopacity" data-zanim='{"delay":0.7}'>
+                        <a class="btn btn-primary mr-3 mt-3" href="#">Support Services
+                            <span class="fa fa-chevron-right ml-2"></span>
+                        </a>
+                        <a class="btn btn-warning mt-3" href="#">Training Courses
+                            <span class="fa fa-chevron-right ml-2"></span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <!--/.row-->
         </div>
-        <!--/.container-->
     </section>
-    <section class="background-white  text-center">
-        <div class="container">
+    <section class="background-white text-center">
+        <div class="container pushDown" style="margin-top:-60px;">
             <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-sm-12 pushDown col-lg-6">
                     <h3 class="color-primary fs-2 fs-lg-3">Welcome to Kutech</h3>
-                    <%--<p class="px-lg-4 mt-3">We aim to be your one stop shop for all things SQL Server, providing Training and Support for all budgets and requirements.</p>--%>
                     <p class="px-lg-4 mt-3">We aim to be your one stop shop for all things SQL Server through our Support and Training services to suit all budgets and requirements.</p>
                     <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                 </div>
@@ -55,7 +46,7 @@
                         <source src="assets/images/videos/SQLTrainingIntro.ogv" type="video/ogg" />
                     </video>
                 </div>--%>
-                <div class="col-6" style="min-height:150px; max-height:150px;">
+                <div class="col-sm-12 pushDown pushRight col-lg-6" style="min-height:150px; max-height:150px;">
                     <asp:Image CssClass="logoImage" ID="mainLogo" runat="server" ImageUrl="~/assets/images/main/Logo.png" />
                 </div>
             </div>

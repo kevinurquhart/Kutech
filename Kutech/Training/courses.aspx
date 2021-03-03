@@ -86,7 +86,7 @@
                     <p class="mb-0 mt-3 px-3">This course is for beginners, starting with a complete introduction to the basics before quickly progressing through to more complex structures.  This provides a firm grounding in T-SQL querying, the confidence to perform basic data analysis and manipulation with T-SQL, alongside the creation of basic objects leading to the writing of good quality reusable and centralised code.</p>
                     <div style="margin-top:-20px; margin-left:15px;">
                         <div style="margin-top:25px; margin-bottom:-50px;">
-                            <a class="btn btn-primary mr-3 mt-3" href="an-introduction-to-t-sql.aspx">Course Detail
+                            <a class="btn btn-primary mr-3 mt-3" href="anintroductiontotsql.aspx">Course Detail
                                 <span class="fa fa-chevron-right ml-2"></span>
                             </a>
                         </div>
@@ -132,7 +132,7 @@
                     <p class="mb-0 mt-3 px-3"'>Application developers regularly have to interact with a SQL Server, both writing and generating T-SQL queries and procedures. Sadly, many find that this code lacks performance, however, this can nearly always be rectified with some basic SQL Server internals knowledge and T-SQL tricks and tips in order to troubleshoot queries and to write highly performant and re-usable code. This course provides all the information required to write T-SQL that will drastically improve an application's performance.</p>
                     <div style="margin-top:-20px; margin-left:15px;">
                         <div style="margin-top:25px; margin-bottom:-50px;">
-                            <a class="btn btn-primary mr-3 mt-3" href="T-SQL-for-Developers.aspx">Course Detail
+                            <a class="btn btn-primary mr-3 mt-3" href="TSQLforDevelopers.aspx">Course Detail
                                 <span class="fa fa-chevron-right ml-2"></span>
                             </a>
                         </div>
@@ -168,7 +168,7 @@
                     <p class="mb-0 mt-3 px-3">By the end of this course you will be able to confidently maintain and monitor SQL Server, alongside having a thorough understanding of disaster recovery, index maintenance, and baselining so that you can deal with any issues raised and remain calm and in control should a crisis ever arise. This information will be the underlying knowledge, not just to keep the lights on, but to build on when looking to improve and upgrade your career.</p>
                     <div style="margin-top:-20px; margin-left:15px;">
                         <div style="margin-top:25px; margin-bottom:-50px;">
-                            <a class="btn btn-primary mr-3 mt-3" href="Accidental-DBA.aspx">Course Detail
+                            <a class="btn btn-primary mr-3 mt-3" href="AccidentalDBA.aspx">Course Detail
                                 <span class="fa fa-chevron-right ml-2"></span>
                             </a>
                         </div>
@@ -214,7 +214,7 @@
                     <p class="mb-0 mt-3 px-3">This course is designed to provide all the information and skills needed to become a highly skilled SQL Server Developer. It covers everything from indexing and statistical estimation to complex query constructs, optimizer tricks, execution plan analysis, architectural guidance, and much more.</p>
                     <div style="margin-top:-20px; margin-left:15px;">
                         <div style="margin-top:25px; margin-bottom:-50px;">
-                            <a class="btn btn-primary mr-3 mt-3" href="Deep-Dive-T-SQL-Performance-Tuning.aspx">Course Detail
+                            <a class="btn btn-primary mr-3 mt-3" href="DeepDiveTSQLPerformanceTuning.aspx">Course Detail
                                 <span class="fa fa-chevron-right ml-2"></span>
                             </a>
                         </div>
@@ -250,7 +250,7 @@
                     <p class="mb-0 mt-3 px-3">This course aims to provide you with all the knowledge you need to be a specialist SQL Server DBA. It covers all the basics and essentials from disaster recovery and baselining through to server configuration, index maintenance, and high availability, but then pushes on to database design analysis and architecture (CDC, Temporal Tables, partitioning, and In-Memory optimisations).</p>
                     <div style="margin-top:-20px; margin-left:15px;">
                         <div style="margin-top:25px; margin-bottom:-50px;">
-                            <a class="btn btn-primary mr-3 mt-3" href="SQL-Server-Database-Administration.aspx">Course Detail
+                            <a class="btn btn-primary mr-3 mt-3" href="SQLServerDatabaseAdministration.aspx">Course Detail
                                 <span class="fa fa-chevron-right ml-2"></span>
                             </a>
                         </div>

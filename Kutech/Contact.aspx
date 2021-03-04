@@ -49,16 +49,16 @@
                 <div class="col-lg-4">
                     <div class="h-100 px-5 py-4 background-white radius-secondary">
                         <h5>Socials</h5>
-                        <a class="d-inline-block mt-2" href="https://www.linkedin.com/company/sqlsolved" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <a class="d-inline-block mt-2" href="https://www.linkedin.com/company/kutechsolutionsltd" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                             <span class="fa fa-linkedin-square fs-2 mr-2 color-primary"></span>
                         </a>
-                        <a class="d-inline-block mt-2" href="https://twitter.com/SQLSolvedUK" target="_blank" rel="noreferrer" aria-label="Twitter">
+                        <a class="d-inline-block mt-2" href="https://twitter.com/KutechSolutions" target="_blank" rel="noreferrer" aria-label="Twitter">
                             <span class="fa fa-twitter-square fs-2 mx-2 color-primary"></span>
                         </a>
-                        <a class="d-inline-block mt-2" href="https://www.facebook.com/SQLSolvedUK" target="_blank" rel="noreferrer" aria-label="Facebook">
+                        <a class="d-inline-block mt-2" href="https://www.facebook.com/KutechSolutionsLtd/" target="_blank" rel="noreferrer" aria-label="Facebook">
                             <span class="fa fa-facebook-square fs-2 mx-2 color-primary"></span>
                         </a>
-                        <a class="d-inline-block mt-2" href="https://www.facebook.com/SQLSolvedUK" target="_blank" rel="noreferrer" aria-label="YouTube">
+                        <a class="d-inline-block mt-2" href="https://www.youtube.com/channel/UCcGCKJmpfOtJdkS_F9Slnuw" target="_blank" rel="noreferrer" aria-label="YouTube">
                             <span class="fa fa-youtube-square fs-2 mx-2 color-primary"></span>
                         </a>
                         <div style="height:25px;"></div>

@@ -97,5 +97,73 @@ namespace Kutech.Logic
 
             return mySQL.fetchDataSet("exec web.rateCheck");
         }
+
+        public DataSet getBlogMaxPage(string blogName)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec blog.maxPage '" + blogName + "'");
+        }
+
+        public DataSet getBlogRecentList(string blogName)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec blog.recentList '" + blogName + "'");
+        }
+
+        public DataSet getBlogArticleData(string pageChoice)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec blog.getArticleData '" + pageChoice + "'");
+        }
+
+        public void setBlogNewComment(string fullNameText, string email, string title, string comment)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            fullNameText = mySQL.sqlProtection(fullNameText);
+            email = mySQL.sqlProtection(email);
+            title = mySQL.sqlProtection(title);
+            comment = mySQL.sqlProtection(comment);
+
+            mySQL.executeNone("exec blog.newComment '" + fullNameText + "', '" + email + "', '" + title + "', '" + comment + "'");
+        }
+
+        public DataSet getBlogComments(string pageChoice)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec blog.getComments '" + pageChoice + "'");
+        }
+
+        public DataSet getBlogCategoryList(string blogName)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec blog.categoryList'" + blogName + "'");
+        }
+
+        public DataSet getBlogCategoryPage(string pageChoice)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec blog.categoryBlogs '" + pageChoice + "'");
+        }
+
+        public DataSet getBlogPageBlogs(string pageNo, string blogName)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec blog.pageBlogs " + pageNo + ", '" + blogName + "'");
+        }
+
+        public DataSet getBlogSearchResults(string searchText)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec blog.blogSearch '" + searchText + "'");
+        }
     }
 }

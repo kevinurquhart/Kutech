@@ -89,5 +89,10 @@ namespace Kutech.Logic
 
             return myReader;
         }
+
+        public string sqlProtection(string SQLText)
+        {
+            return SQLText.Replace("'", "''").Replace("--", "").Replace("/*", "").Replace("*/", "");
+        }
     }
 }

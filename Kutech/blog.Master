@@ -34,6 +34,7 @@
     <link href="~/assets/lib/lightbox2/dist/css/lightbox.css" rel="stylesheet">
     <link href="~/assets/css/style.css" rel="stylesheet">
     <link href="~/assets/css/custom.css" rel="stylesheet">
+    <link href="~/assets/css/blog.css" rel="stylesheet">
 </head>
 <body>
     <form id="form1" runat="server">
@@ -171,10 +172,16 @@
 								<a href="JavaScript:void(0)">Interviews</a>
 								<ul class="dropdown fs--1">
 									<li>
-										<a href="#">Automated</a>
+										<a runat="server" href="~/Interview/interview.aspx">Summary</a>
 									</li>
 									<li>
-										<a href="#">In-Person</a>
+										<a runat="server" href="~/Interview/automated.aspx">Automated</a>
+									</li>
+									<li>
+										<a runat="server" href="~/Interview/InPerson.aspx">In-Person</a>
+									</li>
+                                    <li>
+										<a runat="server" href="~/Interview/pricing.aspx">Pricing</a>
 									</li>
 								</ul>
 							</li>
@@ -182,10 +189,10 @@
 								<a href="JavaScript:void(0)">Blogs</a>
 								<ul class="dropdown fs--1">
 									<li>
-										<a href="#">SQL Server</a>
+										<a runat="server" href="~/Blog/SQLServer.aspx">SQL Server</a>
 									</li>
 									<li>
-										<a href="#">PowerShell</a>
+										<a runat="server" href="~/Blog/PowerShell.aspx">PowerShell</a>
 									</li>
 									<%--<li>
 										<a href="#">C#</a>
@@ -194,7 +201,7 @@
 										<a href="#">Power BI</a>
 									</li>--%>
 									<li>
-										<a href="#">Docker</a>
+										<a runat="server" href="~/Blog/Docker.aspx">Docker</a>
 									</li>
 								</ul>
 							</li>

@@ -200,7 +200,7 @@
             <div class="row no-gutters pos-relative mt-6">
                 <div class="elixir-caret d-none d-lg-block"></div>
                 <div class="col-lg-6 py-3 py-lg-0 mb-0" style="min-height:400px;">
-                    <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0" style="background-image:url(../assets/images/service1.jpg);"> </div>
+                    <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0" style="background-image:url(../assets/images/main/service1Int.jpg);"> </div>
                     <!--/.background-holder-->
                 </div>
                 <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0 radius-tr-lg-secondary">
@@ -229,7 +229,7 @@
             <div class="row no-gutters pos-relative mt-4 mt-lg-0">
                 <div class="elixir-caret d-none d-lg-block"></div>
                 <div class="col-lg-6 py-3 py-lg-0 mb-0 order-lg-2" style="min-height:400px;">
-                    <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(../assets/images/courses.jpg);"> </div>
+                    <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(../assets/images/main/courses.jpg);"> </div>
                     <!--/.background-holder-->
                 </div>
                 <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
@@ -258,7 +258,7 @@
             <div class="row no-gutters pos-relative mt-4 mt-lg-0">
                 <div class="elixir-caret d-none d-lg-block"></div>
                 <div class="col-lg-6 py-3 py-lg-0 mb-0" style="min-height:400px;">
-                    <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0 radius-tl-lg-0 radius-bl-0 radius-bl-lg-secondary" style="background-image:url(../assets/images/locations.jpg);"> </div>
+                    <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0 radius-tl-lg-0 radius-bl-0 radius-bl-lg-secondary" style="background-image:url(../assets/images/main/service2.jpg);"> </div>
                     <!--/.background-holder-->
                 </div>
                 <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary">

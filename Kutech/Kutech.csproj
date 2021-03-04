@@ -260,6 +260,11 @@
     <Content Include="assets\lib\semantic-ui-transition\transition.min.css" />
     <Content Include="assets\lib\semantic-ui-transition\transition.min.js" />
     <Content Include="assets\lib\typed.js\lib\typed.min.js" />
+    <Content Include="Blog\category.aspx" />
+    <Content Include="Blog\content.aspx" />
+    <Content Include="Blog\Docker.aspx" />
+    <Content Include="Blog\PowerShell.aspx" />
+    <Content Include="Blog\search.aspx" />
     <Content Include="Blog\SQLServer.aspx" />
     <Content Include="Catalog\Images\boatbig.png" />
     <Content Include="Catalog\Images\boatpaper.png" />
@@ -311,6 +316,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="faq.aspx" />
     <Content Include="home.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -366,6 +372,10 @@
     <Content Include="assets\lib\jquery.mb.ytplayer\dist\css\font\ytp-regular.woff" />
     <Content Include="assets\lib\lightbox2\dist\js\lightbox-plus-jquery.min.map" />
     <Content Include="assets\lib\lightbox2\dist\js\lightbox.min.map" />
+    <Content Include="Interview\automated.aspx" />
+    <Content Include="Interview\inperson.aspx" />
+    <Content Include="Interview\interview.aspx" />
+    <Content Include="Interview\pricing.aspx" />
     <Content Include="Portal\Dashboard.aspx" />
     <Content Include="Portal\receipts.aspx" />
     <Content Include="Portal\resources.aspx" />
@@ -375,6 +385,7 @@
     <Content Include="blog.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\logo.jpg" />
+    <Content Include="privacy.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -408,6 +419,7 @@
     <Content Include="Support\healthcheck.aspx" />
     <Content Include="Support\prices.aspx" />
     <Content Include="Support\remoteDBA.aspx" />
+    <Content Include="terms.aspx" />
     <Content Include="Training\accidentalDBA.aspx" />
     <Content Include="Training\AnIntroductionToTSQL.aspx" />
     <Content Include="Training\courseDates.aspx" />
@@ -575,6 +587,41 @@
     <Compile Include="blog.Master.designer.cs">
       <DependentUpon>blog.Master</DependentUpon>
     </Compile>
+    <Compile Include="Blog\category.aspx.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog\category.aspx.designer.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog\content.aspx.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog\content.aspx.designer.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog\Docker.aspx.cs">
+      <DependentUpon>Docker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog\Docker.aspx.designer.cs">
+      <DependentUpon>Docker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog\PowerShell.aspx.cs">
+      <DependentUpon>PowerShell.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog\PowerShell.aspx.designer.cs">
+      <DependentUpon>PowerShell.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Blog\search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog\search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Blog\SQLServer.aspx.cs">
       <DependentUpon>SQLServer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -631,6 +678,13 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="faq.aspx.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="faq.aspx.designer.cs">
+      <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -640,6 +694,34 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Interview\automated.aspx.cs">
+      <DependentUpon>automated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interview\automated.aspx.designer.cs">
+      <DependentUpon>automated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interview\inperson.aspx.cs">
+      <DependentUpon>inperson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interview\inperson.aspx.designer.cs">
+      <DependentUpon>inperson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interview\interview.aspx.cs">
+      <DependentUpon>interview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interview\interview.aspx.designer.cs">
+      <DependentUpon>interview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interview\pricing.aspx.cs">
+      <DependentUpon>pricing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interview\pricing.aspx.designer.cs">
+      <DependentUpon>pricing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logic\DataAccess.cs" />
     <Compile Include="Logic\ShoppingCartActions.cs" />
@@ -685,6 +767,13 @@
     <Compile Include="Portal\stream.aspx.designer.cs">
       <DependentUpon>stream.aspx</DependentUpon>
     </Compile>
+    <Compile Include="privacy.aspx.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacy.aspx.designer.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
@@ -728,6 +817,13 @@
     </Compile>
     <Compile Include="Support\remoteDBA.aspx.designer.cs">
       <DependentUpon>remoteDBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="terms.aspx.cs">
+      <DependentUpon>terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="terms.aspx.designer.cs">
+      <DependentUpon>terms.aspx</DependentUpon>
     </Compile>
     <Compile Include="Training\accidentalDBA.aspx.cs">
       <DependentUpon>accidentalDBA.aspx</DependentUpon>
@@ -810,7 +906,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\lib\iconsmind2\" />
-    <Folder Include="Blog\images\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

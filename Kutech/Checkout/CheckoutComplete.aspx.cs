@@ -16,12 +16,19 @@ namespace Kutech.Checkout
             {
                 string orderID = Request.QueryString["orderID"].ToString();
 
-                if (Convert.ToInt32(orderID) != Convert.ToInt32(Session["currentOrderID"]))
+                try
+                {
+                    if (Convert.ToInt32(orderID) != Convert.ToInt32(Session["currentOrderID"]))
+                    {
+                        Response.Redirect("~/home.aspx");
+                    }
+                }
+                catch
                 {
                     Response.Redirect("~/home.aspx");
                 }
 
-                orderIDLabel.Text = orderID;
+                orderLabel.Text = "Order Reference: " + orderID;
 
                 ProductContext _db = new ProductContext();
 
@@ -51,11 +58,6 @@ namespace Kutech.Checkout
                 // Clear order id.
                 Session["currentOrderId"] = string.Empty;
             }
-        }
-
-        protected void Continue_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/home.aspx");
         }
     }
 }

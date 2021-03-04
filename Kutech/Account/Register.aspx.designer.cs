@@ -33,6 +33,24 @@ namespace Kutech.Account
         protected global::System.Web.UI.WebControls.Image mainLogo;
 
         /// <summary>
+        /// textFirstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textFirstName;
+
+        /// <summary>
+        /// textLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textLastName;
+
+        /// <summary>
         /// Email control.
         /// </summary>
         /// <remarks>

@@ -15,21 +15,12 @@ namespace Kutech.Checkout
     {
 
         /// <summary>
-        /// orderIDLabel control.
+        /// orderLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label orderIDLabel;
-
-        /// <summary>
-        /// Continue control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Continue;
+        protected global::System.Web.UI.WebControls.Label orderLabel;
     }
 }

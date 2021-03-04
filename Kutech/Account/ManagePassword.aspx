@@ -1,7 +1,15 @@
 ﻿<%@ Page Title="Manage Password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="Kutech.Account.ManagePassword" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
+    <section class="background-white">
+        <div class="container">
+            <div class="container" style="margin-bottom:-50px;">
+                <div class="row mt-6">
+                    <div class="col">
+                        <h3 class="text-center fs-2 fs-md-3" style="margin-top:-40px;">Manage Password</h3>
+                        <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
+                    </div>
+                </div>
     <div class="form-horizontal">
         <section id="passwordForm">
             <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
@@ -82,7 +90,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
+                        <div class="col-md-offset-2 col-md-10" style="margin-top:30px;">
                             <asp:Button runat="server" Text="Change Password" ValidationGroup="ChangePassword" OnClick="ChangePassword_Click" CssClass="btn btn-default" />
                         </div>
                     </div>
@@ -90,4 +98,7 @@
             </asp:PlaceHolder>
         </section>
     </div>
+                </div>
+            </div>
+        </section>
 </asp:Content>

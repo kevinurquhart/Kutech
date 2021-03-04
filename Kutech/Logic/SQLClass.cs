@@ -13,8 +13,8 @@ namespace Kutech.Logic
 
         public SQLClass()
         {
-            //dbConnectionString = "server=MONTY; initial catalog=SQLTraining; user ID=webuser; password=webuser1979;";
-            dbConnectionString = "server=HOMER\\SQL2019; initial catalog=Kutech; user ID=webuser; password=webuser1979;";
+            dbConnectionString = "server=MONTY; initial catalog=Kutech; user ID=webuserKutech; password=Nakftte97!Nakftte97!;";
+            //dbConnectionString = "server=HOMER\\SQL2019; initial catalog=Kutech; user ID=webuser; password=webuser1979;";
             //dbConnectionString = "server=ELEMENTARY; initial catalog=SQLTraining; user ID=webuser; password=webuser1979;";
             //dbConnectionString = "server=SURFACEPRO4\\SQL2017; initial catalog=SQLTraining; user ID=webuser; password=webuser1979;";
         }

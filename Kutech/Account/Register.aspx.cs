@@ -4,13 +4,15 @@ using System.Web;
 using System.Web.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
-using Owin;
+using Kutech.Logic;
 using Kutech.Models;
 
 namespace Kutech.Account
 {
     public partial class Register : Page
     {
+        DataAccess myDAL = new DataAccess();
+
         protected void CreateUser_Click(object sender, EventArgs e)
         {
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
@@ -23,6 +25,8 @@ namespace Kutech.Account
                 //string code = manager.GenerateEmailConfirmationToken(user.Id);
                 //string callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id, Request);
                 //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
+
+                myDAL.setNewUser(textFirstName.Text, textLastName.Text, Email.Text);
 
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
 

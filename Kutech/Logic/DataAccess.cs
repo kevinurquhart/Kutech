@@ -32,7 +32,7 @@ namespace Kutech.Logic
         {
             SQLClass mySQL = new SQLClass();
 
-            return getOnlineProductList(mySQL.fetchDataSet("web.getWebProduct '" + type + "', '" + delivery + "'"));
+            return getOnlineProductList(mySQL.fetchDataSet("exec web.getWebProduct '" + type + "', '" + delivery + "'"));
         }
 
         public DataSet getUserCourses(string userName)
@@ -74,7 +74,7 @@ namespace Kutech.Logic
         {
             SQLClass mySQL = new SQLClass();
 
-            mySQL.executeNone("exec emailProc 'SQLWorld Contact Form', '" + contactName + "', '" + contactEmail + "', null, '" + contactMessage + "'");
+            mySQL.executeNone("exec dbo.emailProc 'Kutech Contact Form', '" + contactName + "', '" + contactEmail + "', null, '" + contactMessage + "'");
         }
 
         public DataSet getCourseSales()
@@ -164,6 +164,13 @@ namespace Kutech.Logic
             SQLClass mySQL = new SQLClass();
 
             return mySQL.fetchDataSet("exec blog.blogSearch '" + searchText + "'");
+        }
+
+        public void setNewUser(string firstName, string lastName, string email)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            mySQL.executeNone("exec web.createWebUser '" + firstName + "', '" + lastName + "', '" + email + "'");
         }
     }
 }

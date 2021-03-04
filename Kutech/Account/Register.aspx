@@ -17,6 +17,18 @@
         <h4>Register with us:</h4>
         <asp:Image CssClass="logoImage" ID="mainLogo" runat="server" ImageUrl="~/assets/images/main/Logo.png" />
         <hr />
+        <asp:Label runat="server" AssociatedControlID="textFirstName" CssClass="col-md-2 control-label">First Name</asp:Label>
+        <div class="col-md-10">
+            <asp:TextBox runat="server" ID="textFirstName" CssClass="form-control" />
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="textFirstName"
+                CssClass="text-danger" ErrorMessage="The first name field is required." />
+        </div>
+        <asp:Label runat="server" AssociatedControlID="textLastName" CssClass="col-md-2 control-label">Last Name</asp:Label>
+        <div class="col-md-10">
+            <asp:TextBox runat="server" ID="textLastName" CssClass="form-control" />
+            <asp:RequiredFieldValidator runat="server" ControlToValidate="textLastName"
+                CssClass="text-danger" ErrorMessage="The last name field is required." />
+        </div>
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Email</asp:Label>

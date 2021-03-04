@@ -19,9 +19,9 @@ namespace Kutech.Checkout
             }
 
             var myOrder = new Order();
-            myOrder.OrderDate = Convert.ToDateTime("2021-02-01");
+            myOrder.OrderDate = Convert.ToDateTime(DateTime.Now);
             myOrder.Username = User.Identity.Name;
-            myOrder.Email = "kevin@kausolutions.co.uk";
+            myOrder.Email = User.Identity.Name;
 
             // Get DB context.
             ProductContext _db = new ProductContext();

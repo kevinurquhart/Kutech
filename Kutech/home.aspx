@@ -59,7 +59,7 @@
                     <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Our aim is to be your company's fully integrated Remote DBA service.</p>
                     <br />
                     <%--What We Do / SQL Training / Our Offering / How We Help--%>
-                    <a class="btn btn-primary mt-3" data-zanim='{"delay":0.0}' href="#">SQL Services
+                    <a class="btn btn-primary mt-3" data-zanim='{"delay":0.0}' runat="server" href="~/Support/RemoteDBA.aspx">SQL Services
                         <span class="fa fa-chevron-right ml-2"></span>
                     </a>
                 </div>
@@ -70,7 +70,7 @@
                     <h5 class="mt-4" data-zanim='{"delay":0.1}'>Training Courses</h5>
                     <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Off the shelf and fully customisable courses catering for all requirements.</p>
                     <br />
-                    <a class="btn btn-primary mt-3" data-zanim='{"delay":0.0}' href="#">SQL Training
+                    <a class="btn btn-primary mt-3" data-zanim='{"delay":0.0}' runat="server" href="~/Training/training.aspx">SQL Training
                         <span class="fa fa-chevron-right ml-2"></span>
                     </a>
                 </div>
@@ -81,7 +81,7 @@
                     <h5 class="mt-4" data-zanim='{"delay":0.1}'>Consultancy</h5>
                     <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Providing real world advice in regard to features, upgrades, and migrations. </p>
                     <br />
-                    <a class="btn btn-primary mt-3" data-zanim='{"delay":0.0}' href="#">SQL Consulting
+                    <a class="btn btn-primary mt-3" data-zanim='{"delay":0.0}' runat="server" href="~/Consultancy/consultancy.aspx">SQL Consulting
                         <span class="fa fa-chevron-right ml-2"></span>
                     </a>
                 </div>
@@ -92,7 +92,7 @@
                     <h5 class="mt-4" data-zanim='{"delay":0.1}'>Interview</h5>
                     <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>We can help ensure you hire the right candidate for your firm and role.</p>
                     <br />
-                    <a class="btn btn-primary mt-3" data-zanim='{"delay":0.0}' href="#">SQL Interview
+                    <a class="btn btn-primary mt-3" data-zanim='{"delay":0.0}' runat="server" href="~/Interview/interview.aspx">SQL Interview
                         <span class="fa fa-chevron-right ml-2"></span>
                     </a>
                 </div>

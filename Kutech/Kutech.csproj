@@ -310,6 +310,7 @@
     <Content Include="Checkout\CheckoutReview.aspx" />
     <Content Include="Checkout\CheckoutStart.aspx" />
     <Content Include="Consultancy\consultancy.aspx" />
+    <Content Include="Consultancy\pricing.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -670,6 +671,13 @@
     </Compile>
     <Compile Include="Consultancy\consultancy.aspx.designer.cs">
       <DependentUpon>consultancy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultancy\pricing.aspx.cs">
+      <DependentUpon>pricing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultancy\pricing.aspx.designer.cs">
+      <DependentUpon>pricing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

@@ -152,7 +152,15 @@
 								</ul>
 							</li>
 							<li>
-								<a runat="server" href="~/Consultancy/Consultancy.aspx">Consultancy</a>
+								<a href="JavaScript:void(0)">Support</a>
+								<ul class="dropdown fs--1">
+									<li>
+										<a runat="server" href="~/Consultancy/Consultancy.aspx">Consultancy</a>
+									</li>
+									<li>
+										<a runat="server" href="~/Consultancy/pricing.aspx">Our Prices</a>
+									</li>
+								</ul>
 							</li>
 							<li>
 								<a href="JavaScript:void(0)">Support</a>

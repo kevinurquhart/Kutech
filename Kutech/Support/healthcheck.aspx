@@ -27,12 +27,12 @@
     <section class="background-white  text-center">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-sm-12 pushDown col-lg-6">
                     <h3 class="color-primary fs-2 fs-lg-3">Health Check Service</h3>
                     <p class="px-lg-4 mt-3">SQL Server is a very intricate piece of software with countless settings and configuration values throughout the application which can impact your performance. We are please to offer our health check in order to guide you to these pain points and help resolve any issues.</p>
                     <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                 </div>
-                <div class="col-6" style="min-height:150px; max-height:150px;">
+                <div class="col-sm-12 pushDown pushRight col-lg-6" style="min-height:150px; max-height:150px; margin-left:-5px;">
                     <asp:Image CssClass="logoImage" ID="mainLogo" runat="server" ImageUrl="~/assets/images/main/Logo.png" />
                 </div>
             </div>

@@ -54,7 +54,7 @@
                     </div>
                     <div style="margin-top:25px;"></div><h5>Aiman Hassanyeh</h5>
                     <h6>Lead Database Administrator</h6>
-                    <p style="width:80%; font-size:0.9em; margin-left:10%;">Basically, he's a knob. 'nuff said.</p>
+                    <p style="width:80%; font-size:0.9em; margin-left:10%;">Aiman has been a Production DBA since 2007, having started off in the not for profit sector before moving into financial services. Therefore he has extensive real world experience of the product in all its guises across numerous industries, implementations, and sizes of SQL Server estate. It is this extensive knowledge that he uses to full effect within Kutech as our Lead Database Administrator.</p>
                 </div>
                 <div class="col-sm-6 col-lg-4 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                     <div class="mx-auto align-items-center tooltip small" data-zanim='{"delay":0}' style="width:165px;">

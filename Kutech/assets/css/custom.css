@@ -160,3 +160,39 @@
         margin-left:-10px;
     }
 }
+.cookieConsent {
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    min-height: 30px;
+    background-color: #e9be00;
+    color: #176493;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight:bold;
+    z-index:99999;
+}
+
+.cookiebutton {
+    margin-left:10px;
+    border:none;
+    background-color: #176493;
+    width: 110px;
+    color:white;
+    font-size:0.9em;
+}
+
+.cookiebutton2 {
+    margin-left: 10px;
+    border: none;
+    width: 110px;
+    font-size: 0.9em;
+    background-color: white;
+    color: #176493;
+}
+
+.cookiebutton2 a{
+    text-decoration:none;
+}

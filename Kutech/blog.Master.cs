@@ -67,7 +67,7 @@ namespace Kutech
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ShowBanner();
         }
 
         protected void Page_PreRender(object sender, EventArgs e)
@@ -82,6 +82,32 @@ namespace Kutech
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+        }
+
+        public void ShowBanner()
+        {
+            HttpCookie BannerCookie = Request.Cookies["KutechCookiePermissions"];
+            if (BannerCookie != null)
+            {
+                cookieconsent.Visible = false;
+            }
+            else
+            {
+                cookieconsent.Visible = true;
+            }
+        }
+
+        protected void cookieAccept_Click(object sender, EventArgs e)
+        {
+            HttpCookie BannerCookie = Request.Cookies["KutechCookiePermissions"];
+            if (BannerCookie == null)
+            {
+                BannerCookie = new HttpCookie("KutechCookiePermissions");
+                BannerCookie.Value = "YES";
+                BannerCookie.Expires = DateTime.Now.AddMonths(6);
+                Response.Cookies.Add(BannerCookie);
+                ShowBanner();
+            }
         }
     }
 }

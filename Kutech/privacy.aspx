@@ -49,6 +49,7 @@
                                     <b>Kutech Solutions Ltd, we, </b>or <b>us</b> - <i>Kutech Solutions Ltd, a company incorporated in England and Wales with registered number 13239896 whose registered office is at Amelia House, Crescent Road,  Worthing,   West Sussex,  BN11 1QR;</i><br />
                                     <b>User </b>or <b>you</b> - <i>Any third party that accesses the Website and is not either (i) employed by Kutech Solutions Ltd and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to Kutech Solutions Ltd and accessing the Website in connection with the provision of such services;</i><br />
                                     <b>Website</b> - <i>The website that you are currently using, Kutech.co.uk, and any sub-domains of this site unless expressly excluded by their own terms and conditions.</i><br />
+                                    <b>Cookie</b> - <i>A small piece of information that is placed on your computer when you visit certain websites. When we refer to "cookies" we include other technologies with similar purposes, such as tags and identifiers. Find out more about the use of cookies on <a href="www.cookiecentral.com">cookiecentral.com</a>.</i><br />
                                 </li>
                                 <li>
                                     In this privacy policy, unless the context requires a different interpretation:<br />
@@ -72,9 +73,21 @@
                             </ol>
                         </p>
                         <br />
-                        <h5>Data collected</h5>
+                        <h5>Cookie Policy</h5>
                         <p class="mt-3">
                             <ol start="5">
+                                <li>We use the following types of cookie, as will your browser:</li>
+                                    <ol type="a">
+                                        <li>Analytics cookies that remember your computer or mobile device when you visit our website and recognise visits to our website across different devices. They keep track of browsing patterns and help us to build up a profile of how our users access our website. We use that information for customer analytics. Your browser may use similar cookies for similar purposes and to serve advertisements for others;</li>
+                                        <li>Service cookies that help us to make our website work as efficiently as possible; remember your registration and login details; track your basket items; remember your settings preferences; to detect what device you are using and adapt how we present our services according to the screen size of that device.;</li>
+                                    </ol>
+                                    in each case, in accordance with this privacy policy.
+                            </ol>
+                        </p>
+                        <br />
+                        <h5>Data collected</h5>
+                        <p class="mt-3">
+                            <ol start="6">
                                 <li>We may collect the following Data, which includes personal Data, from you:</li>
                                     <ol type="a">
                                         <li>name;</li>
@@ -86,7 +99,7 @@
                         <br />
                         <h5>How we collect Data</h5>
                         <p class="mt-3">
-                            <ol start="6">
+                            <ol start="7">
                                 <li>We collect data in the following ways:</li>
                                 <ol type="a">
                                     <li>data is given to us by you</li>
@@ -97,7 +110,7 @@
                         <br />
                         <h5>Data that is given to us by you</h5>
                         <p class="mt-3">
-                            <ol start="7">
+                            <ol start="8">
                                 <li>Kutech Solutions Ltd will collect your Data in a number of ways, for example:</li>
                                 <ol type="a">
                                     <li>when you contact us through the Website, by telephone, post, e-mail or through any other means;</li>
@@ -110,7 +123,7 @@
                         <br />
                         <h5>Data that is collected automatically</h5>
                         <p class="mt-3">
-                            <ol start="8">
+                            <ol start="9">
                                 <li>To the extent that you access the Website, we will collect your Data automatically, for example:</li>
                                 <ol type="a">
                                     <li>we automatically collect some information about your visit to the Website. This information helps us to make improvements to Website content and navigation, and includes your IP address, the date, times and frequency with which you access the Website and the way you use and interact with its content.</li>
@@ -120,7 +133,7 @@
                         <br />
                         <h5>Our use of Data</h5>
                         <p class="mt-3">
-                            <ol start="9">
+                            <ol start="10">
                                 <li>Any or all of the above Data may be required by us from time to time in order to provide you with the best possible service and experience when using our Website. Specifically, Data may be used by us for the following reasons:</li>
                                 <ol type="a">
                                     <li>internal record keeping;</li>
@@ -139,7 +152,7 @@
                         <br />
                         <h5>Keeping Data secure</h5>
                         <p class="mt-3">
-                            <ol start="12">
+                            <ol start="13">
                                 <li>We will use technical and organisational measures to safeguard your Data, for example:</li>
                                 <ol type="a">
                                     <li>access to your account is controlled by a password and a user name that is unique to you.</li>
@@ -152,7 +165,7 @@
                         <br />
                         <h5>Data retention</h5>
                         <p class="mt-3">
-                            <ol start="15">
+                            <ol start="16">
                                 <li>Unless a longer retention period is required or permitted by law, we will only hold your Data on our systems for the period necessary to fulfil the purposes outlined in this privacy policy or until you request that the Data be deleted.</li>
                                 <li>Even if we delete your Data, it may persist on backup or archival media for legal, tax or regulatory purposes.</li>
                             </ol>
@@ -160,7 +173,7 @@
                         <br />
                         <h5>Your rights</h5>
                         <p class="mt-3">
-                            <ol start="17">
+                            <ol start="18">
                                 <li>You have the following rights in relation to your Data:</li>
                                 <ol type="a">
                                     <li><b>Right to access</b> - the right to request (i) copies of the information we hold about you at any time, or (ii) that we modify, update or delete such information. If we provide you with access to the information we hold about you, we will not charge you for this, unless your request is "manifestly unfounded or excessive." Where we are legally permitted to do so, we may refuse your request. If we refuse your request, we will tell you the reasons why.</li>
@@ -178,14 +191,14 @@
                         <br />
                         <h5>Links to other websites</h5>
                         <p class="mt-3">
-                            <ol start="21">
+                            <ol start="22">
                                 <li>This Website may, from time to time, provide links to other websites. We have no control over such websites and are not responsible for the content of these websites. This privacy policy does not extend to your use of such websites. You are advised to read the privacy policy or statement of other websites prior to using them.</li>
                             </ol>
                         </p>
                         <br />
                         <h5>Changes of business ownership and control</h5>
                         <p class="mt-3">
-                            <ol start="22">
+                            <ol start="23">
                                 <li>Kutech Solutions Ltd may, from time to time, expand or reduce our business and this may involve the sale and/or the transfer of control of all or part of Kutech Solutions Ltd. Data provided by Users will, where it is relevant to any part of our business so transferred, be transferred along with that part and the new owner or newly controlling party will, under the terms of this privacy policy, be permitted to use the Data for the purposes for which it was originally supplied to us.</li>
                                 <li>We may also disclose Data to a prospective purchaser of our business or any part of it.</li>
                                 <li>In the above instances, we will take steps with the aim of ensuring your privacy is protected.</li>
@@ -194,7 +207,7 @@
                         <br />
                         <h5>General</h5>
                         <p class="mt-3">
-                            <ol start="25">
+                            <ol start="26">
                                 <li>You may not transfer any of your rights under this privacy policy to any other person. We may transfer our rights under this privacy policy where we reasonably believe your rights will not be affected.</li>
                                 <li>If any court or competent authority finds that any provision of this privacy policy (or part of any provision) is invalid, illegal or unenforceable, that provision or part-provision will, to the extent required, be deemed to be deleted, and the validity and enforceability of the other provisions of this privacy policy will not be affected.</li>
                                 <li>Unless otherwise agreed, no delay, act or omission by a party in exercising any right or remedy will be deemed a waiver of that, or any other, right or remedy.</li>
@@ -204,14 +217,14 @@
                         <br />
                         <h5>Changes to this privacy policy</h5>
                         <p class="mt-3">
-                            <ol start="29">
+                            <ol start="30">
                                 <li>Kutech Solutions Ltd reserves the right to change this privacy policy as we may deem necessary from time to time or as may be required by law. Any changes will be immediately posted on the Website and you are deemed to have accepted the terms of the privacy policy on your first use of the Website following the alterations.   You may contact Kutech Solutions Ltd by email at info@Kutech.co.uk.</li>
                             </ol>
                         </p>
                         <br />
                         <h5>Attribution</h5>
                         <p class="mt-3">
-                            <ol start="30">
+                            <ol start="31">
                                 <li>This privacy policy was create using a document from Rocket Lawyer (https://www.rocketlawyer.com/gb/en). 24 January 2020.</li>
                             </ol>
                         </p>

@@ -172,5 +172,12 @@ namespace Kutech.Logic
 
             mySQL.executeNone("exec web.createWebUser '" + firstName + "', '" + lastName + "', '" + email + "'");
         }
+
+        public void setWebPurchase(string orderID)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            mySQL.executeNone("exec web.purchase " + orderID);
+        }
     }
 }

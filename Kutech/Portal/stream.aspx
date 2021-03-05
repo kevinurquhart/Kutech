@@ -11,7 +11,7 @@
             </div>
             <div class="row">
                 <div class="col col-md-9">
-                    <div id="videoDiv" runat="server" class="videoPlayer align-items-center" style="border:1px solid black; border-bottom:none;"></div>
+                    <div id="videoDiv" runat="server" class="videoPlayer align-items-center" style="border:1px solid black; border-bottom:none; margin-top:60px; margin-bottom:50px;"></div>
                 </div>
                 <div class="col col-md-3 text-left" style="margin-top:25px;">
                     <br /><br /><h5>Modules</h5><br />

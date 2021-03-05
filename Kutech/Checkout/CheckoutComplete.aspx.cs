@@ -5,11 +5,14 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Kutech.Models;
+using Kutech.Logic;
 
 namespace Kutech.Checkout
 {
     public partial class CheckoutComplete : System.Web.UI.Page
     {
+        DataAccess myDAL = new DataAccess();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -46,6 +49,8 @@ namespace Kutech.Checkout
                     myCurrentOrder.PaymentTransactionId = "true";
                     // Save to DB.
                     _db.SaveChanges();
+
+                    myDAL.setWebPurchase(currentOrderId.ToString());
                 }
 
                 // Clear shopping cart.

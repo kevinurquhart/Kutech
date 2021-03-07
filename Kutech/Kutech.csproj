@@ -1704,6 +1704,8 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="sitemapBlog.xml" />
+    <Content Include="sitemapMain.xml" />
     <Content Include="Support\healthcheck.aspx" />
     <Content Include="Support\prices.aspx" />
     <Content Include="Support\remoteDBA.aspx" />

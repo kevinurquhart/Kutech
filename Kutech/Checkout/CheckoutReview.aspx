@@ -66,8 +66,8 @@
     </div>
     <p></p>
     <hr />
-    <%--<script src="https://www.paypal.com/sdk/js?client-id=AUH-tXGJyMrpROdPBHc4PsRVccUAMKgfp1mURJbsS6bhcNxdkKnKsQZEYUYMiTuoUp6j41Cketr22Zs1&currency=GBP" data-sdk-integration-source="button-factory"></script>--%>
-    <script src="https://www.paypal.com/sdk/js?client-id=AbdPqOUASmko60fw3y5OUV9-P5yJbdM0NE0fj3hxX0usO1rTjL7kmhbyVL-jVyKsifrSKFwh2lOUHkkW&currency=GBP" data-sdk-integration-source="button-factory"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AUH-tXGJyMrpROdPBHc4PsRVccUAMKgfp1mURJbsS6bhcNxdkKnKsQZEYUYMiTuoUp6j41Cketr22Zs1&currency=GBP" data-sdk-integration-source="button-factory"></script>
+    <%--<script src="https://www.paypal.com/sdk/js?client-id=AbdPqOUASmko60fw3y5OUV9-P5yJbdM0NE0fj3hxX0usO1rTjL7kmhbyVL-jVyKsifrSKFwh2lOUHkkW&currency=GBP" data-sdk-integration-source="button-factory"></script>--%>
 
     <div id="paypal-button-container" style="width:60%; margin-left:20%;">
         <div id="orderIDDiv" style="display: none;">
@@ -113,15 +113,18 @@
                             })
                         });
                         responsePromise.then(function (responseFromServer) {
-                            location.href = 'https://localhost:44358/Checkout/CheckoutComplete.aspx?orderID=' + orderID;
+                            //location.href = 'https://localhost:44358/Checkout/CheckoutComplete.aspx?orderID=' + orderID;
+                            location.href = 'https://kutech.co.uk/Checkout/CheckoutComplete.aspx?orderID=' + orderID;
                         })
                     });
                 },
                 onError: function () {
-                    location.href = 'https://localhost:44358/Checkout/CheckoutError.aspx';
+                    //location.href = 'https://localhost:44358/Checkout/CheckoutError.aspx';
+                    location.href = 'https://kutech.co.uk/Checkout/CheckoutError.aspx';
                 },
                 onCancel: function () {
-                    location.href = 'https://localhost:44358/Checkout/CheckoutCancel.aspx';
+                    //location.href = 'https://localhost:44358/Checkout/CheckoutCancel.aspx';
+                    location.href = 'https://kutech.co.uk/Checkout/CheckoutCancel.aspx';
                 }
             }).render('#paypal-button-container');
         }

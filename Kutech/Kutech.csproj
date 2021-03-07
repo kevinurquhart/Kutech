@@ -1615,6 +1615,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="emailPreferences.aspx" />
     <Content Include="faq.aspx" />
     <Content Include="home.aspx" />
     <Content Include="favicon.ico" />
@@ -1629,35 +1630,6 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
-    <Content Include="assets\scss\components\_bootstrap.scss" />
-    <Content Include="assets\scss\components\_border.scss" />
-    <Content Include="assets\scss\components\_buttons.scss" />
-    <Content Include="assets\scss\components\_carousel.scss" />
-    <Content Include="assets\scss\components\_flexslider.scss" />
-    <Content Include="assets\scss\components\_forms.scss" />
-    <Content Include="assets\scss\components\_google-map.scss" />
-    <Content Include="assets\scss\components\_helpers.scss" />
-    <Content Include="assets\scss\components\_hoverbox.scss" />
-    <Content Include="assets\scss\components\_lightbox.scss" />
-    <Content Include="assets\scss\components\_masonry.scss" />
-    <Content Include="assets\scss\components\_miscellaneous.scss" />
-    <Content Include="assets\scss\components\_navigation.scss" />
-    <Content Include="assets\scss\components\_prism.scss" />
-    <Content Include="assets\scss\components\_remodal.scss" />
-    <Content Include="assets\scss\components\_semantic-ui.scss" />
-    <Content Include="assets\scss\components\_spacing.scss" />
-    <Content Include="assets\scss\components\_tables.scss" />
-    <Content Include="assets\scss\components\_tabs.scss" />
-    <Content Include="assets\scss\components\_typed-text.scss" />
-    <Content Include="assets\scss\components\_typography.scss" />
-    <Content Include="assets\scss\custom.scss" />
-    <Content Include="assets\scss\style.scss" />
-    <Content Include="assets\scss\utility\_mixins.scss" />
-    <Content Include="assets\scss\utility\_mq.scss" />
-    <Content Include="assets\scss\_components.scss" />
-    <Content Include="assets\scss\_config.scss" />
-    <Content Include="assets\scss\_core.scss" />
-    <Content Include="assets\scss\_utility.scss" />
     <Content Include="Catalog\Images\Thumbs.db" />
     <Content Include="Catalog\Images\Thumbs\Thumbs.db" />
     <Content Include="Checkout\Web.config" />
@@ -1701,6 +1673,7 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\logo.jpg" />
     <Content Include="privacy.aspx" />
+    <Content Include="Resources\ADSJupyterGuide.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -2000,6 +1973,13 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="emailPreferences.aspx.cs">
+      <DependentUpon>emailPreferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="emailPreferences.aspx.designer.cs">
+      <DependentUpon>emailPreferences.aspx</DependentUpon>
+    </Compile>
     <Compile Include="faq.aspx.cs">
       <DependentUpon>faq.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2054,6 +2034,7 @@
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductContext.cs" />
+    <Compile Include="MyWebFormsFriendlyUrlResolver.cs" />
     <Compile Include="Portal\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2097,6 +2078,13 @@
       <DependentUpon>privacy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ADSJupyterGuide.aspx.cs">
+      <DependentUpon>ADSJupyterGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\ADSJupyterGuide.aspx.designer.cs">
+      <DependentUpon>ADSJupyterGuide.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2228,6 +2216,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\lib\iconsmind2\" />
+    <Folder Include="Portal\Downloads\Invoices\" />
+    <Folder Include="Portal\Videos\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

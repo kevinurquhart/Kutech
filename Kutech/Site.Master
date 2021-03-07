@@ -2,11 +2,12 @@
 
 <!DOCTYPE html>
 
-<html lang="en_gb">
+<html lang="en-gb">
 <head runat="server">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kutech Solutions Limited - Microsoft SQL Server Specialists offering Training, Support Services, Remote DBA, and Consultancy." />
     <title><%: Page.Title %> | Kutech</title>
 
     <%--<webopt:bundlereference runat="server" path="~/Content/css" />--%>
@@ -58,7 +59,7 @@
                     <div class="row align-items-center">
                         <div class="col-8 d-lg-block">
                             <a runat="server" href="~/">
-                                <asp:Image ID="mainHeaderLogo" runat="server" ImageUrl="~/assets/images/main/mainHomeLogo.png" />
+                                <asp:Image ID="mainHeaderLogo" runat="server" ImageUrl="~/assets/images/main/mainHomeLogo.png" AlternateText="Kutech Logo" />
                             </a>
                         </div>
                         <div class="col-1 ml-md-auto order-md-2 order-sm-2 order-lg-2 d-sm-block color-white">
@@ -79,7 +80,7 @@
                                 <LoggedInTemplate>
                                     <div class="container fs--1">
                                         <div class="row">
-                                            <div class="col-7 text-right">
+                                            <div class="col-7 hideAccount text-right">
                                                 <a class="color-white" runat="server" href="~/Account/Manage" title="Manage your account">Your Account</a>
                                             </div>
                                             <div class="col-5">
@@ -98,9 +99,9 @@
             <div class="znav-white znav-container sticky-top navbar-elixir"" id="znav-container">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand overflow-hidden pr-3" style="height:50px; margin-top:-5px;" href="home.aspx">
+                    <%--<a class="navbar-brand overflow-hidden pr-3" style="height:50px; margin-top:-5px;" href="home.aspx">
                         <img src="../assets/images/main/logo-top.png" alt="" aria-label="SQLTraining Logo" />
-                    </a>
+                    </a>--%>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <div class="hamburger hamburger--emphatic">
                             <div class="hamburger-box">
@@ -350,7 +351,7 @@
                     <div class="container" style="width:90%;">
                         <span>Our site uses cookies only to personalise content and analyse traffic. We do not use cookies for advertising.</span>
                         <asp:Button ID="cookieAccept" CssClass="cookiebutton" runat="server" Text="Consent" OnClick="cookieAccept_Click" />
-                        <button id="privacy" class="cookiebutton2"><a runat="server" href="~/privacy.aspx" class="cookiebutton2">Learn More</a></button>
+                        <asp:LinkButton ID="linkButton" runat="server" Text="Policy" CssClass="cookiebutton2" Width="110" PostBackUrl="~/privacy.aspx"></asp:LinkButton>
                     </div>
                 </div>
             </ContentTemplate>

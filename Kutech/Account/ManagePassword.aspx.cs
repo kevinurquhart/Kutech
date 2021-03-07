@@ -6,11 +6,14 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
+using Kutech.Logic;
 
 namespace Kutech.Account
 {
     public partial class ManagePassword : System.Web.UI.Page
     {
+        DataAccess myDAL = new DataAccess();
+
         protected string SuccessMessage
         {
             get;
@@ -58,6 +61,7 @@ namespace Kutech.Account
                 IdentityResult result = manager.ChangePassword(User.Identity.GetUserId(), CurrentPassword.Text, NewPassword.Text);
                 if (result.Succeeded)
                 {
+                    myDAL.setPassword(User.Identity.Name, NewPassword.Text);
                     var user = manager.FindById(User.Identity.GetUserId());
                     signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
                     Response.Redirect("~/Account/Manage?m=ChangePwdSuccess");

@@ -51,7 +51,7 @@
                 <div class="col-1 col-md-1">
                 </div>
                 <div class="col-12 col-md-6" style="min-height:250px;">
-                    <video class="background-holder" autoplay="autoplay" muted="muted">
+                    <video class="background-holder" autoplay="autoplay" muted="muted" playsinline>
                         <source src="../assets/images/videos/SQLTrainingIntro.mp4" type="video/mp4" />
                         <source src="../assets/images/videos/SQLTrainingIntro.webm" type="video/webm" />
                         <source src="../assets/images/videos/SQLTrainingIntro.ogv" type="video/ogg" />

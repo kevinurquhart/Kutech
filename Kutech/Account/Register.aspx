@@ -63,6 +63,7 @@
             </div>
         </div>
         <br />
+        <p style="font-size:0.87em;"><i><b>Note</b><br /><p style="margin-top:-15px; margin-left:2%; margin-right:2%; font-size:0.8em;">Registration will add you to our <u>very</u> infrequent mailing list for our newsletter along with course and product information.<br />You have the option to opt out on registration confirmation email.</p></i></p>
     </div>
     </div>
 </asp:Content>

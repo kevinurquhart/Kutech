@@ -33,7 +33,7 @@ namespace Kutech.Account
                     //string callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id, Request);
                     //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
 
-                    myDAL.setNewUser(textFirstName.Text, textLastName.Text, Email.Text);
+                    myDAL.setNewUser(textFirstName.Text, textLastName.Text, Email.Text, Password.Text);
 
                     signInManager.SignIn(user, isPersistent: false, rememberBrowser: false);
 

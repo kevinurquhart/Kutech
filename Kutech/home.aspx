@@ -15,17 +15,29 @@
         <div class="background-holder mainBackground"> </div>
         <div class="container">
             <div class="row h-full60 py-8 align-items-center">
-                <div class="align-items-center text-center overflow-hidden mainText">
-                    <h1 class="fs-4 fs-md-4 color-white zopacity" data-zanim='{"delay":0.5}'>SQL Server Training, Consulting, and Support Services</h1>
-                </div>
-                <div class="align-items-center text-center overflow-hidden mainButtons">
-                    <div class="zopacity" data-zanim='{"delay":0.7}'>
-                        <a class="btn btn-primary mr-3 mt-3" href="#">Support Services
-                            <span class="fa fa-chevron-right ml-2"></span>
-                        </a>
-                        <a class="btn btn-warning mt-3" href="#">Training Courses
-                            <span class="fa fa-chevron-right ml-2"></span>
-                        </a>
+                <div class="col-sm-12 col-lg-12">
+                    <div class="align-items-center text-center overflow-hidden mainText">
+                        <h1 class="fs-4 fs-md-4 color-white zopacity" data-zanim='{"delay":0.5}'>SQL Server Training, Consulting, and Support Services</h1>
+                    </div>
+                    <%--<div class="align-items-center text-center overflow-hidden mainButtons">
+                        <div class="zopacity" data-zanim='{"delay":0.7}'>
+                            <a class="btn btn-primary mr-3 mt-3" runat="server" href="~/Support/RemoteDBA.aspx">Support Services
+                                <span class="fa fa-chevron-right ml-2"></span>
+                            </a>
+                            <a class="btn btn-warning mt-3" runat="server" href="~/Training/training.aspx">Training Courses
+                                <span class="fa fa-chevron-right ml-2"></span>
+                            </a>
+                        </div>
+                    </div>--%>
+                    <div class="overflow-hidden text-center">
+                        <div class="zopacity" data-zanim='{"delay":0.7}'>
+                            <a class="btn btn-primary mr-3 mt-3" runat="server" href="~/Support/RemoteDBA.aspx">Support Services
+                                <span class="fa fa-chevron-right ml-2"></span>
+                            </a>
+                            <a class="btn btn-warning mt-3" runat="server" href="~/Training/training.aspx">Training Courses
+                                <span class="fa fa-chevron-right ml-2"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,13 +59,13 @@
                     </video>
                 </div>--%>
                 <div class="col-sm-12 pushDown pushRight col-lg-6" style="min-height:150px; max-height:150px;">
-                    <asp:Image CssClass="logoImage" ID="mainLogo" runat="server" ImageUrl="~/assets/images/main/Logo.png" />
+                    <asp:Image CssClass="logoImage" ID="mainLogo" runat="server" ImageUrl="~/assets/images/main/Logo.png" AlternateText="Main Kutech Logo" />
                 </div>
             </div>
             <div class="row mt-4 mt-md-5">
                 <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                     <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"delay":0}' style="height:100px; width:100px;">
-                        <span class="fs-3 color-blueish mx-auto fw-600"><img src="assets/images/main/iconSupport.jpg" /></span>
+                        <span class="fs-3 color-blueish mx-auto fw-600"><img src="assets/images/main/iconSupport.jpg" alt="Support Icon" /></span>
                     </div>
                     <h5 class="mt-4" data-zanim='{"delay":0.1}'>Support Services</h5>
                     <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Our aim is to be your company's fully integrated Remote DBA service.</p>
@@ -65,7 +77,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                     <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                        <span class="fs-3 color-blueish mx-auto fw-600"><img src="assets/images/main/iconTraining.jpg" /></span>
+                        <span class="fs-3 color-blueish mx-auto fw-600"><img src="assets/images/main/iconTraining.jpg" alt="Training Icon" /></span>
                     </div>
                     <h5 class="mt-4" data-zanim='{"delay":0.1}'>Training Courses</h5>
                     <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Off the shelf and fully customisable courses catering for all requirements.</p>
@@ -76,7 +88,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                     <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                        <span class="fs-3 color-blueish mx-auto fw-600"><img src="assets/images/main/iconConsulting.jpg" /></span>
+                        <span class="fs-3 color-blueish mx-auto fw-600"><img src="assets/images/main/iconConsulting.jpg" alt="Consultancy Icon" /></span>
                     </div>
                     <h5 class="mt-4" data-zanim='{"delay":0.1}'>Consultancy</h5>
                     <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Providing real world advice in regard to features, upgrades, and migrations. </p>
@@ -87,7 +99,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                     <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                        <span class="fs-3 color-blueish mx-auto fw-600"><img src="assets/images/main/iconInterview.jpg" /></span>
+                        <span class="fs-3 color-blueish mx-auto fw-600"><img src="assets/images/main/iconInterview.jpg" alt="Interview Icon" /></span>
                     </div>
                     <h5 class="mt-4" data-zanim='{"delay":0.1}'>Interview</h5>
                     <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>We can help ensure you hire the right candidate for your firm and role.</p>
@@ -322,10 +334,10 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-5" style="min-height:250px;">
-                    <img src="assets/images/main/WordCloudKutech.jpg"/>
+                    <img src="assets/images/main/WordCloudKutech.jpg" alt="Kutech Word Cloud"/>
                 </div>
                 <div class="col-12 col-md-7" style="min-height:250px;">
-                    <img src="assets/images/main/AllLogo.jpg"/>
+                    <img src="assets/images/main/AllLogo.jpg" alt="Kutech Companies Serviced"/>
                 </div>
             </div>
         </div>

@@ -5,12 +5,14 @@ using System.Web.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Owin;
-using Kutech.Models;
+using Kutech.Logic;
 
 namespace Kutech.Account
 {
     public partial class ResetPassword : Page
     {
+        DataAccess myDAL = new DataAccess();
+
         protected string StatusMessage
         {
             get;
@@ -33,6 +35,7 @@ namespace Kutech.Account
                 var result = manager.ResetPassword(user.Id, code, Password.Text);
                 if (result.Succeeded)
                 {
+                    myDAL.setPassword(Email.Text, Password.Text);
                     Response.Redirect("~/Account/ResetPasswordConfirmation");
                     return;
                 }

@@ -56,12 +56,12 @@
             <section class="background-primary py-3 d-sm-block">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-8 d-none d-lg-block">
+                        <div class="col-8 d-lg-block">
                             <a runat="server" href="~/">
-                                <asp:Image ID="mainHeaderLogo" runat="server" ImageUrl="~/assets/images/main/mainHomeLogo.png" />
+                                <asp:Image ID="mainHeaderLogo" runat="server" ImageUrl="~/assets/images/main/mainHomeLogo.png" AlternateText="Kutech Logo" />
                             </a>
                         </div>
-                        <div class="col-1 ml-md-auto order-md-2 d-none d-sm-block color-white">
+                        <div class="col-1 ml-md-auto order-md-2 order-sm-2 order-lg-2 d-sm-block color-white">
                             <a runat="server" href="~/ShoppingCart.aspx">
 								<span class="fa fa-shopping-cart fw-800 icon-position-fix color-white"></span>
 								<span id="checkout_items" runat="server" class="checkout_items color-white">0</span>
@@ -79,7 +79,7 @@
                                 <LoggedInTemplate>
                                     <div class="container fs--1">
                                         <div class="row">
-                                            <div class="col-7 text-right">
+                                            <div class="col-7 hideAccount text-right">
                                                 <a class="color-white" runat="server" href="~/Account/Manage" title="Manage your account">Your Account</a>
                                             </div>
                                             <div class="col-5">

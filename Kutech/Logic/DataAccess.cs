@@ -166,11 +166,11 @@ namespace Kutech.Logic
             return mySQL.fetchDataSet("exec blog.blogSearch '" + searchText + "'");
         }
 
-        public void setNewUser(string firstName, string lastName, string email)
+        public void setNewUser(string firstName, string lastName, string email, string pwd)
         {
             SQLClass mySQL = new SQLClass();
 
-            mySQL.executeNone("exec web.createWebUser '" + firstName + "', '" + lastName + "', '" + email + "'");
+            mySQL.executeNone("exec web.createWebUser '" + firstName + "', '" + lastName + "', '" + email + "', '" + pwd + "'");
         }
 
         public void setWebPurchase(string orderID)
@@ -178,6 +178,20 @@ namespace Kutech.Logic
             SQLClass mySQL = new SQLClass();
 
             mySQL.executeNone("exec web.purchase " + orderID);
+        }
+
+        public void setPassword(string userName, string password)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            mySQL.executeNone("exec web.changePassword '" + userName + "', '" + password + "'");
+        }
+
+        public void setEmailPreferences(string key)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            mySQL.executeNone("exec web.updateEmailPreferences '" + key + "'");
         }
     }
 }

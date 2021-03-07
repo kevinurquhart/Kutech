@@ -246,7 +246,7 @@
                     <div class="container" style="width:90%;">
                         <span>Our site uses cookies only to personalise content and analyse traffic. We do not use cookies for advertising.</span>
                         <asp:Button ID="cookieAccept" CssClass="cookiebutton" runat="server" Text="Consent" OnClick="cookieAccept_Click" />
-                        <button id="privacy" class="cookiebutton2"><a runat="server" href="~/privacy.aspx" class="cookiebutton2">Learn More</a></button>
+                        <asp:LinkButton ID="linkButton" runat="server" Text="Policy" CssClass="cookiebutton2" Width="110" PostBackUrl="~/privacy.aspx"></asp:LinkButton>
                     </div>
                 </div>
             </ContentTemplate>

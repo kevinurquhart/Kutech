@@ -38,7 +38,7 @@
                         <img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/blog/SQLServer.png" alt="SQL Server Logo" />
                         <div class="px-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <div class="overflow-hidden">
-                                <a href="SQLBlog\blog.aspx" style="text-decoration:none;"><h5 data-zanim='{"delay":0}'>SQL Server</h5></a>
+                                <a runat="server" href="~/Blog/SQLServer.aspx" style="text-decoration:none;"><h5 data-zanim='{"delay":0}'>SQL Server</h5></a>
                             </div>
                             <div class="overflow-hidden">
                                 <h6 class="fw-400 color-7" data-zanim='{"delay":0.1}'>Microsoft SQL Server Blog</h6>
@@ -54,7 +54,7 @@
                         <img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/blog/CSharp.png" width="300" alt="CSharp Logo" />
                         <div class="px-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <div class="overflow-hidden">
-                                <a href="CSharpBlog\blog.aspx" style="text-decoration:none;"><h5 data-zanim='{"delay":0}'>C#</h5></a>
+                                <a runat="server" href="~/Blog/SQLServer.aspx" style="text-decoration:none;"><h5 data-zanim='{"delay":0}'>C#</h5></a>
                             </div>
                             <div class="overflow-hidden">
                                 <h6 class="fw-400 color-7" data-zanim='{"delay":0.1}'>C# Basics and Tips</h6>
@@ -70,7 +70,7 @@
                         <img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/blog/PowerShell.png" alt="PowerShell Logo" />
                         <div class="px-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <div class="overflow-hidden">
-                                <a href="PowerShellBlog\blog.aspx" style="text-decoration:none;"><h5 data-zanim='{"delay":0}'>PowerShell</h5></a>
+                                <a runat="server" href="~/Blog/PowerShell.aspx" style="text-decoration:none;"><h5 data-zanim='{"delay":0}'>PowerShell</h5></a>
                             </div>
                             <div class="overflow-hidden">
                                 <h6 class="fw-400 color-7" data-zanim='{"delay":0.1}'>PowerShell Basics</h6>
@@ -86,7 +86,7 @@
                         <img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/blog/Docker.png" alt="Docker Logo" />
                         <div class="px-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <div class="overflow-hidden">
-                                <a href="DockerBlog\blog.aspx" style="text-decoration:none;"><h5 data-zanim='{"delay":0}'>Docker</h5></a>
+                                <a runat="server" href="~/Blog/Docker.aspx" style="text-decoration:none;"><h5 data-zanim='{"delay":0}'>Docker</h5></a>
                             </div>
                             <div class="overflow-hidden">
                                 <h6 class="fw-400 color-7" data-zanim='{"delay":0.1}'>Containers with SQL Server</h6>

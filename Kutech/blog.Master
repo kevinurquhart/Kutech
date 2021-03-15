@@ -99,9 +99,9 @@
             <div class="znav-white znav-container sticky-top navbar-elixir"" id="znav-container">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand overflow-hidden pr-3" style="height:50px; margin-top:-5px;" href="home.aspx">
+                    <%--<a class="navbar-brand overflow-hidden pr-3" style="height:50px; margin-top:-5px;" href="home.aspx">
                         <img src="../assets/images/main/logo-top.png" alt="" aria-label="SQLTraining Logo" />
-                    </a>
+                    </a>--%>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <div class="hamburger hamburger--emphatic">
                             <div class="hamburger-box">

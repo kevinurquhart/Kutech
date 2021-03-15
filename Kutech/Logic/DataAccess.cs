@@ -193,5 +193,12 @@ namespace Kutech.Logic
 
             mySQL.executeNone("exec web.updateEmailPreferences '" + key + "'");
         }
+
+        public DataSet getRSSFeed()
+        {
+            SQLClass mySQL = new SQLClass();
+
+            return mySQL.fetchDataSet("exec web.rssFeed");
+        }
     }
 }

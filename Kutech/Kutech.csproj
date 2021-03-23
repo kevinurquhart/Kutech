@@ -1674,6 +1674,8 @@
     <Content Include="Images\logo.jpg" />
     <Content Include="privacy.aspx" />
     <Content Include="Resources\ADSJupyterGuide.aspx" />
+    <Content Include="Resources\Python.aspx" />
+    <Content Include="Resources\R.aspx" />
     <Content Include="rssFeed.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -2087,6 +2089,20 @@
     </Compile>
     <Compile Include="Resources\ADSJupyterGuide.aspx.designer.cs">
       <DependentUpon>ADSJupyterGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Python.aspx.cs">
+      <DependentUpon>Python.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\Python.aspx.designer.cs">
+      <DependentUpon>Python.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\R.aspx.cs">
+      <DependentUpon>R.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\R.aspx.designer.cs">
+      <DependentUpon>R.aspx</DependentUpon>
     </Compile>
     <Compile Include="rssFeed.aspx.cs">
       <DependentUpon>rssFeed.aspx</DependentUpon>

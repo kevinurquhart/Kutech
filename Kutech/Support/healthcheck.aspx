@@ -63,7 +63,7 @@
                         <span class="fs-3 color-blueish mx-auto fw-600"><img src="../assets/images/support/iconDrill.jpg" /></span>
                     </div>
                     <h5 class="mt-4" data-zanim='{"delay":0.1}'>Maintenance</h5>
-                    <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>A SQL Server needs maintaining and we ensure that you have all the bases covered correctly..</p>
+                    <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>A SQL Server needs maintaining and we ensure that you have all the bases covered correctly.</p>
                 </div>
             </div>
             <!--/.row-->

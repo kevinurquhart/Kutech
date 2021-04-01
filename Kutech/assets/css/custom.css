@@ -147,6 +147,10 @@
     .pushDown {
         margin-top: 25px;
     }
+    .videoPlayer{
+        width:500px;
+        padding-left:100px;
+    }
 }
 
 @media (max-width:500px){

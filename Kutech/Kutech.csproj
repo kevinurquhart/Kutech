@@ -1450,6 +1450,7 @@
     <Content Include="assets\images\main\terms.jpg" />
     <Content Include="assets\images\main\WordCloud.jpg" />
     <Content Include="assets\images\main\WordCloudKutech.jpg" />
+    <Content Include="assets\images\main\YouTube.jpg" />
     <Content Include="assets\images\Support\cover1.jpg" />
     <Content Include="assets\images\Support\Flexible.jpg" />
     <Content Include="assets\images\Support\focus.jpg" />
@@ -1487,12 +1488,9 @@
     <Content Include="assets\images\Training\TrainingKutech.jpg" />
     <Content Include="assets\images\Training\TrainingKutechGrey.jpg" />
     <Content Include="assets\images\Training\why.jpg" />
-    <Content Include="assets\images\videos\SQLInterviewIntro.mp4" />
-    <Content Include="assets\images\videos\SQLInterviewIntro.ogv" />
-    <Content Include="assets\images\videos\SQLInterviewIntro.webm" />
-    <Content Include="assets\images\videos\SQLTrainingIntro.mp4" />
-    <Content Include="assets\images\videos\SQLTrainingIntro.ogv" />
-    <Content Include="assets\images\videos\SQLTrainingIntro.webm" />
+    <Content Include="assets\images\videos\advert.mp4" />
+    <Content Include="assets\images\videos\advert.ogv" />
+    <Content Include="assets\images\videos\advert.webm" />
     <Content Include="assets\js\config.js" />
     <Content Include="assets\js\core.js" />
     <Content Include="assets\js\googlemap.js" />
@@ -1670,6 +1668,7 @@
     <Content Include="assets\images\Blog\SQLServer\useful\random\Thumbs.db" />
     <Content Include="assets\images\Blog\SQLServer\useful\Thumbs.db" />
     <Content Include="assets\images\Blog\SQLServer\useful\waitStats\Thumbs.db" />
+    <Content Include="YouTube.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\logo.jpg" />
     <Content Include="privacy.aspx" />
@@ -2237,6 +2236,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="YouTube.aspx.cs">
+      <DependentUpon>YouTube.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YouTube.aspx.designer.cs">
+      <DependentUpon>YouTube.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

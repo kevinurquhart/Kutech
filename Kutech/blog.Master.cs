@@ -68,6 +68,10 @@ namespace Kutech
         protected void Page_Load(object sender, EventArgs e)
         {
             ShowBanner();
+
+            DataAccess myDAL = new DataAccess();
+
+            myDAL.logPageAccess(this.MainContent.Page.GetType().FullName);
         }
 
         protected void Page_PreRender(object sender, EventArgs e)

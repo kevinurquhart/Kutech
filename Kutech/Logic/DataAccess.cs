@@ -194,6 +194,13 @@ namespace Kutech.Logic
             mySQL.executeNone("exec web.updateEmailPreferences '" + key + "'");
         }
 
+        public void logPageAccess(string pageName)
+        {
+            SQLClass mySQL = new SQLClass();
+
+            mySQL.executeNone("exec dbo.pageAccessLogWrite '" + pageName + "'");
+        }
+
         public DataSet getRSSFeed()
         {
             SQLClass mySQL = new SQLClass();

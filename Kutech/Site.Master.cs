@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Security.Claims;
-using System.Security.Principal;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
-using System.Linq;
-using Kutech.Models;
 using Kutech.Logic;
 
 namespace Kutech
@@ -73,6 +68,10 @@ namespace Kutech
         protected void Page_Load(object sender, EventArgs e)
         {
             ShowBanner();
+
+            DataAccess myDAL = new DataAccess();
+
+            myDAL.logPageAccess(this.MainContent.Page.GetType().FullName);
         }
 
         protected void Page_PreRender(object sender, EventArgs e)

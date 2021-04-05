@@ -24,6 +24,8 @@ namespace Kutech.Blog
 
             string pageChoice = Request.QueryString["title"];
 
+            myDAL.logPageAccess(pageChoice);
+
             myDataSet = myDAL.getBlogArticleData(pageChoice);
             try
             {

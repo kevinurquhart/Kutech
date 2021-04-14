@@ -1424,13 +1424,16 @@
     <Content Include="assets\images\main\AllLogo.jpg" />
     <Content Include="assets\images\main\blogWrite.jpg" />
     <Content Include="assets\images\main\ceo.jpg" />
+    <Content Include="assets\images\main\columnstore.jpg" />
     <Content Include="assets\images\main\contact.jpg" />
     <Content Include="assets\images\main\courses.jpg" />
+    <Content Include="assets\images\main\dba.jpg" />
     <Content Include="assets\images\main\faq.jpg" />
     <Content Include="assets\images\main\iconConsulting.jpg" />
     <Content Include="assets\images\main\iconInterview.jpg" />
     <Content Include="assets\images\main\iconSupport.jpg" />
     <Content Include="assets\images\main\iconTraining.jpg" />
+    <Content Include="assets\images\main\InterviewPic.jpg" />
     <Content Include="assets\images\main\Logo.png" />
     <Content Include="assets\images\main\mainHomeLogo.png" />
     <Content Include="assets\images\main\Michelle.jpg" />
@@ -1441,13 +1444,17 @@
     <Content Include="assets\images\main\service2.jpg" />
     <Content Include="assets\images\main\service3Int.jpg" />
     <Content Include="assets\images\main\splash.jpg" />
+    <Content Include="assets\images\main\SQLDeveloper.jpg" />
+    <Content Include="assets\images\main\SQLDocker.png" />
     <Content Include="assets\images\main\SQLInterview2.png" />
     <Content Include="assets\images\main\SQLMonitoring2.png" />
     <Content Include="assets\images\main\SQLSolved2.png" />
     <Content Include="assets\images\main\SQLTraining2.png" />
     <Content Include="assets\images\main\staff.jpg" />
     <Content Include="assets\images\main\strive1.jpg" />
+    <Content Include="assets\images\main\Temporal.jpg" />
     <Content Include="assets\images\main\terms.jpg" />
+    <Content Include="assets\images\main\Upgrade.jpg" />
     <Content Include="assets\images\main\WordCloud.jpg" />
     <Content Include="assets\images\main\WordCloudKutech.jpg" />
     <Content Include="assets\images\main\YouTube.jpg" />
@@ -1668,6 +1675,9 @@
     <Content Include="assets\images\Blog\SQLServer\useful\random\Thumbs.db" />
     <Content Include="assets\images\Blog\SQLServer\useful\Thumbs.db" />
     <Content Include="assets\images\Blog\SQLServer\useful\waitStats\Thumbs.db" />
+    <Content Include="Resources\installguide.aspx" />
+    <Content Include="webinar.aspx" />
+    <Content Include="Webinars\Interview.aspx" />
     <Content Include="YouTube.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\logo.jpg" />
@@ -2089,6 +2099,13 @@
     <Compile Include="Resources\ADSJupyterGuide.aspx.designer.cs">
       <DependentUpon>ADSJupyterGuide.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\installguide.aspx.cs">
+      <DependentUpon>installguide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resources\installguide.aspx.designer.cs">
+      <DependentUpon>installguide.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Python.aspx.cs">
       <DependentUpon>Python.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2237,6 +2254,20 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="webinar.aspx.cs">
+      <DependentUpon>webinar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webinar.aspx.designer.cs">
+      <DependentUpon>webinar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webinars\Interview.aspx.cs">
+      <DependentUpon>Interview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webinars\Interview.aspx.designer.cs">
+      <DependentUpon>Interview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YouTube.aspx.cs">
       <DependentUpon>YouTube.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2277,7 +2308,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>61237</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44358/</IISUrl>
+          <IISUrl>https://localhost:41237/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

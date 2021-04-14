@@ -64,6 +64,21 @@
     border-bottom: 1px solid #d6d6d6;
 }
 
+.table6 {
+    padding-left: 20px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    width:15%;
+}
+
+@media all and (max-width:900px){
+    .table6 {
+        padding-left: 20px;
+        border: none;
+        border-bottom: 1px solid #d6d6d6;
+    }
+}
+
 .square_btnNavTable {
     display: inline-block;
     padding: 0.5em 1em;
@@ -256,4 +271,9 @@
         margin-top: -500px;
         margin-bottom: 50px;
     }
+}
+
+video{
+    position:relative;
+    width:100%;
 }

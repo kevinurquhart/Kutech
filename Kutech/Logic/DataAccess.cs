@@ -22,17 +22,18 @@ namespace Kutech.Logic
                                 ProductDuration = Convert.ToString(dr["ProductDuration"]),
                                 ProductPrice = Convert.ToDouble(dr["ProductPrice"]),
                                 ProductType = Convert.ToString(dr["ProductType"]),
-                                ProductDelivery = Convert.ToString(dr["ProductDelivery"])
+                                ProductDelivery = Convert.ToString(dr["ProductDelivery"]),
+                                ProductDate = Convert.ToString(dr["ProductDate"])
                             }).ToList();
 
             return courseList;
         }
 
-        public List<Product> getWebProduct(string type, string delivery)
+        public List<Product> getWebProduct(string type, string delivery, int filter = 0)
         {
             SQLClass mySQL = new SQLClass();
 
-            return getOnlineProductList(mySQL.fetchDataSet("exec web.getWebProduct '" + type + "', '" + delivery + "'"));
+            return getOnlineProductList(mySQL.fetchDataSet("exec web.getWebProduct '" + type + "', '" + delivery + "', " + filter.ToString()));
         }
 
         public DataSet getUserCourses(string userName)

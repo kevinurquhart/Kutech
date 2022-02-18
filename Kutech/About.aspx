@@ -37,7 +37,7 @@
                         <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>Message From CEO</h5>
                             <%--<i><p class="my-4" data-zanim='{"delay":0.1}'>Kutech strives to help all our clients solve the hardest problems they face when using SQL Server in their businesses.<br /><br />Whether through training, monitoring, or providing support hours to plug your staffing shortfall, we are with you every step of the way. </p></i>--%>
-                            <i><p class="my-4" data-zanim='{"delay":0.1}'>Kutech was founded as a composite of our previous brands to bring all SQL Server facets under one roof.<br /><br />We now offer Training, Support Services, and Consultancy all under the one brand with an emphasis on our unparalleled Microsoft SQL Server expertise but also offering Power BI, PowerShell, Docker and more in order to give you even more rounded support than ever before.</p></i>
+                            <i><p class="my-4" data-zanim='{"delay":0.1}'>Kutech was founded as a composite of our previous brands to bring all SQL Server facets under one roof.<br /><br />We now offer Support Services, Consultancy, and Training all under the one brand with an emphasis on our unparalleled Microsoft SQL Server expertise but also offering Power BI, PowerShell, Docker, Office, Python and more in order to give you even more rounded support than ever before.</p></i>
                             <%--<img data-zanim='{"delay":0.2}'
                                 src="assets/images/signature.png" alt="" />--%>
                             <h5 class="text-uppercase mt-3 fw-500 mb-1" data-zanim='{"delay":0.3}'>Kevin Urquhart</h5>

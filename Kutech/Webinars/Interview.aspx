@@ -288,7 +288,7 @@
                 </div>
                 <h5 style="font-weight:normal;">Microsoft SQL Server has several products available that you can use for free.  Firstly, there is SQL Server Express, which is free to use in both Test and Production, however this has limitations (for example maximum database size).  However, there is also a Developer Edition that we can use for free in order to run our tests and scenarios.  It is this Edition that the following videos teach us to install.<br /><br />
                     We have easy installation guides that will get you up and running for free on the following page:<br /><br />
-                    <a href="Resources/installguide.aspx">Installation Guide</a>
+                    <a href="../Resources/installguide.aspx">Installation Guide</a>
                 </h5>
             </div>
         </div>

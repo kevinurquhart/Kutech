@@ -18,7 +18,7 @@
                 <div class="col-lg-12 col-sm-12">
                     <h5>Installing SQL Server Developer Edition</h5><hr style="width:15%;" /><br /><br />
                     <video controls="controls">
-                        <source src="../assets/images/videos/advert.mp4" type="video/mp4" />
+                        <source src="../assets/images/videos/installDevEnv.mp4" type="video/mp4" />
                         <source src="../assets/images/videos/advert.webm" type="video/webm" />
                         <source src="../assets/images/videos/advert.ogv" type="video/ogg" />
                     </video>
@@ -26,9 +26,9 @@
             </div><br /><br /><br />
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-sm-12">
-                    <h5>Installing SQL Server Management Studio</h5><hr style="width:15%;" /><br /><br />
+                    <h5>How to Restore a Database</h5><hr style="width:15%;" /><br /><br />
                     <video controls="controls">
-                        <source src="../assets/images/videos/advert.mp4" type="video/mp4" />
+                        <source src="../assets/images/videos/RestoreDatabase.mp4" type="video/mp4" />
                         <source src="../assets/images/videos/advert.webm" type="video/webm" />
                         <source src="../assets/images/videos/advert.ogv" type="video/ogg" />
                     </video>
@@ -36,12 +36,8 @@
             </div><br /><br /><br />
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-sm-12">
-                    <h5>Restoring the Demo Database</h5><hr style="width:15%;" /><br /><br />
-                    <video controls="controls">
-                        <source src="../assets/images/videos/advert.mp4" type="video/mp4" />
-                        <source src="../assets/images/videos/advert.webm" type="video/webm" />
-                        <source src="../assets/images/videos/advert.ogv" type="video/ogg" />
-                    </video>
+                    <h5>Webinar Databases</h5><hr style="width:15%;" /><br /><br />
+                    <p>Blah</p>
                 </div>
             </div>
         </div>

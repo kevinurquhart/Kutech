@@ -222,7 +222,7 @@
                                 <h5 data-zanim='{"delay":0}'>Our Services</h5>
                             </div>
                             <div class="overflow-hidden">
-                                <p class="mt-3" data-zanim='{"delay":0.1}'>We are a small outfit specialising in providing a personal service to all our clients. We can be relied upon to carry out company critical BAU, releasing existing resource for project work. Likewise we are more than happy being your sole company DBA or T-SQL Developer, albeit remote, with full team integration through a dedicated resource providing the attention your firm needs.</p>
+                                <p class="mt-3" data-zanim='{"delay":0.1}'>We are a growing firm specialising in providing a personal service to all our clients. We can be relied upon to carry out company critical BAU, releasing existing resource for project work. Likewise we are more than happy being your sole company DBA or T-SQL Developer, albeit remote, with full team integration through a dedicated resource providing the attention your firm needs.</p>
                             </div>
                             <div class="overflow-hidden">
                                 <div data-zanim='{"delay":0.2}'>
@@ -280,7 +280,7 @@
                                 <h5 data-zanim='{"delay":0}'>Our Experience</h5>
                             </div>
                             <div class="overflow-hidden">
-                                <p class="mt-3" data-zanim='{"delay":0.1}'>Power BI, Docker, PowerShell, and basic C# scripting are all critical strings to a DBA or SQL Developer's bow and here at Kutech we understand there is much more required of a DBA or Developer than Administration and T-SQL alone. Therefore, in addition to our sheer depth of SQL Server knowledge we are also well versed in all related technologies to support and enhance your environment.</p>
+                                <p class="mt-3" data-zanim='{"delay":0.1}'>Power BI, Docker, PowerShell, and basic C# and Python scripting are all critical strings to a DBA or SQL Developer's bow and here at Kutech we understand there is much more required of a DBA or Developer than Administration and T-SQL alone. Therefore, in addition to our sheer depth of SQL Server knowledge we are also well versed in all related technologies to support and enhance your environment.</p>
                             </div>
                             <div class="overflow-hidden">
                                 <div data-zanim='{"delay":0.2}'>

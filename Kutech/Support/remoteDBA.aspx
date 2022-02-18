@@ -193,7 +193,7 @@
             <div class="row justify-content-center">
                 <div class="col-sm-12 pushDown col-lg-6">
                     <h3 class="color-primary fs-2 fs-lg-3">Remote DBA Services</h3>
-                    <p class="px-lg-4 mt-3">This is now the life blood of the company having starting as an offshoot to SQL Training Ltd but quickly growing into first it's own brand and then large enough to spark an entire re-brand in 2021 to bring all our services under one roof here at Kutech Solutions Ltd.</p>
+                    <p class="px-lg-4 mt-3">This is now the life blood of the company having started as an offshoot to SQL Training Ltd but quickly growing into first it's own brand and then large enough to spark an entire re-brand in 2021 to bring all our services under one roof here at Kutech Solutions Ltd.</p>
                     <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                 </div>
                 <div class="col-sm-12 pushDown pushRight col-lg-6" style="min-height:150px; max-height:150px; margin-left:-5px;">

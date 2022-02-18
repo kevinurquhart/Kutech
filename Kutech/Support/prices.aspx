@@ -626,7 +626,7 @@ body{background-color:#fff;}
                             <div class="generic_price_tag clearfix">	
                                 <span class="price">
                                     <span class="sign">£</span>
-                                    <span class="currency">600</span>
+                                    <span class="currency">650</span>
                                     <%--<span class="cent">.00</span>--%>
                                     <span class="month">/Day</span>
                                 </span>
@@ -639,7 +639,7 @@ body{background-color:#fff;}
                         <!--FEATURE LIST START-->
                         <div class="generic_feature_list">
                         	<ul>
-                            	<li><span>7 Hours Per Month</span></li>
+                            	<li><span><= 14 Hours Per Month</span></li>
                                 <li><span>Rolling Contract</span></li>
                                 <li><span>All Tasks Undertaken</span></li>
                                 <li><span>Dedicated Contact</span></li>
@@ -682,7 +682,7 @@ body{background-color:#fff;}
                             <div class="generic_price_tag clearfix">	
                                 <span class="price">
                                     <span class="sign">£</span>
-                                    <span class="currency">575</span>
+                                    <span class="currency">600</span>
                                     <%--<span class="cent">.00</span>--%>
                                     <span class="month">/Day</span>
                                 </span>
@@ -695,7 +695,7 @@ body{background-color:#fff;}
                         <!--FEATURE LIST START-->
                         <div class="generic_feature_list">
                         	<ul>
-                            	<li><span>Up to 28 Hours Per Month</span></li>
+                            	<li><span>15 to 28 Hours Per Month</span></li>
                                 <li><span>Rolling Contract</span></li>
                                 <li><span>All Tasks Undertaken</span></li>
                                 <li><span>Dedicated Contact</span></li>
@@ -738,7 +738,7 @@ body{background-color:#fff;}
                             <div class="generic_price_tag clearfix">	
                                 <span class="price">
                                     <span class="sign">£</span>
-                                    <span class="currency">550</span>
+                                    <span class="currency">575</span>
                                     <%--<span class="cent">.00</span>--%>
                                     <span class="month">/Day</span>
                                 </span>

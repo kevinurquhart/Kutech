@@ -33,7 +33,7 @@
                     <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll">
                 </div>
                 <div class="col-12" style="margin-top:50px;">
-                    <p class="mt-3">Although our team is small we are incredibly experienced and trained to the highest standards and levels within Microsoft SQL Server.<br /><br />
+                    <p class="mt-3">Our core staff have been with the firm since its inception and are incredibly experienced and trained to the highest standards and levels within Microsoft SQL Server.<br /><br />
                         As a company we never take on more than we can handle to ensure that you get the very best service possible at all times.  We endeavour to integrate into your firm so that you are properly supported rather than dealing with a large, faceless support organisation.
                         We ensure that each and every employee has a deep knowledge of SQL Server internals, performance, architecture, and its operation in real world scenarios, is Microsoft Certified in SQL Server, and has trained at the highest levels under the tutelage of SQLSkills.com*<br /><br />
                     </p>
@@ -45,7 +45,7 @@
                         <img src="assets/images/main/ceo.jpg" alt="Kevin Urquhart"/>
                     </div>
                     <div style="margin-top:25px;"></div><h5>Kevin Urquhart</h5>
-                    <h6>CEO, Lead Consultant, and Chief Trainer</h6>
+                    <h6>CEO and Lead Consultant</h6>
                     <p style="width:80%; font-size:0.9em; margin-left:10%;">Not just the founder of the company, Kevin has over 20 years' experience with SQL Server and a love of the product which leads him into the depths of its internals, usage, and the ability to get every ounce of performance out of SQL Server installation.  He is certified many times over in all facets of the software including being the first ever recipient of the SQLSkills blackbelt certification.</p>
                 </div>
                 <div class="col-sm-6 col-lg-4 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
@@ -53,16 +53,16 @@
                         <img src="assets/images/main/Aiman.jpg" alt="Aiman Hassanyeh"/>
                     </div>
                     <div style="margin-top:25px;"></div><h5>Aiman Hassanyeh</h5>
-                    <h6>Lead Database Administrator</h6>
-                    <p style="width:80%; font-size:0.9em; margin-left:10%;">Aiman has been a Production DBA since 2007, having started off in the not for profit sector before moving into financial services. Therefore he has extensive real world experience of the product in all its guises across numerous industries, implementations, and sizes of SQL Server estate. It is this extensive knowledge that he uses to full effect within Kutech as our Lead Database Administrator.</p>
+                    <h6>Director of Database Administration</h6>
+                    <p style="width:80%; font-size:0.9em; margin-left:10%;">Aiman has been a Production DBA since 2007, having started off in the not for profit sector before moving into financial services. Therefore he has extensive real world experience of the product in all its guises across numerous industries, implementations, and sizes of SQL Server estate. It is this extensive knowledge that he uses to full effect within Kutech leading our DBA Team.</p>
                 </div>
                 <div class="col-sm-6 col-lg-4 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                     <div class="mx-auto align-items-center tooltip small" data-zanim='{"delay":0}' style="width:200px;">
                         <img src="assets/images/main/Michelle.jpg" alt="Michelle Urquhart"/>
                     </div>
                     <div style="margin-top:25px;"></div><h5>Michelle Urquhart</h5>
-                    <h6>Co-owner and Office Manager</h6>
-                    <p style="width:80%; font-size:0.9em; margin-left:10%;">Michelle is in charge of our back office activities having spent many years working as a PA alongside the directors of some of the UK's largest firms such as Barclaycard and Virgin.  She now utilises her years of PA and admin experience to run a tight ship within the firm, enabling others to provide training and support to their clients without worrying about the associated financials and paperwork.</p>
+                    <h6>Director of Operations</h6>
+                    <p style="width:80%; font-size:0.9em; margin-left:10%;">Michelle is in charge of our back office activities having spent many years working as a PA alongside the directors of some of the UK's largest firms such as Barclaycard and Virgin.  She now utilises her years of PA and admin experience to run a tight ship within the firm, enabling others to provide training and support to their clients without worrying about marketing, financials and paperwork.</p>
                 </div>
             </div>
         </div>
